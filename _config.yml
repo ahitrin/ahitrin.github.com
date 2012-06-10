@@ -78,7 +78,9 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : false
+    provider : disqus
+    disqus :
+      short_name : ahitrin
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
