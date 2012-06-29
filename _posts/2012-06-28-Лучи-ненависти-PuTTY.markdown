@@ -1,6 +1,6 @@
 ---
 layout: post
-category : test
+category : work
 comments : true
 tags : [git, ssh, putty]
 ---
