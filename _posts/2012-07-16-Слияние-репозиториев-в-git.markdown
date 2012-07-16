@@ -1,0 +1,189 @@
+---
+layout: post
+category : work
+comments : true
+tags : [git]
+---
+{% include JB/setup %}
+
+Есть два репозитория. Задача - слить их так, чтобы файлы из одного репозитория попали в папку в другом, и при этом сохранилась вся история.
+
+Я не нашёл в сети полного описания всех шагов (может быть, плохо искал), и поэтому решил набить памятку, скомпилированную из разных источников и собственных экспериментов.
+
+Суть проблемы
+-------------
+
+Допустим, у нас есть два проекта, каждый из которых живёт в отдельном репозитории.
+
+Назовём первый проект libfoo. Это архиполезная библиотека с долгой и знатной историей.
+
+    zloddey@zlosung:~/projects/libfoo$ git log --pretty=oneline
+    2e0560e5c43ec63096f975ea534c23d58274a341 Fix critical bug
+    f0d99354dd3140d826b7e77cfb4e72f251dcf81e Awesome Foo library
+
+В ней много файлов, все из которых нам очень важны.
+
+    libfoo
+    ∟ include
+      ∟ foo.h
+    ∟ src
+      ∟ foo.c
+
+Второй проект - это mainproject, убийца Facebook, Twitter и (внезапно) Wikipedia.
+
+    zloddey@zlosung:~/projects/mainproject$ git log --pretty=oneline
+    88ed3223758ea3171ba4fccaf0098c85db38d348 Kill'em all!
+
+Он тоже очень большой
+
+    mainproject
+    ∟ src
+      ∟ main.c
+
+И после трёх лет разработки мы поняли, что нам жизненно необходимо слить оба репозитория в один. А именно, переместить библиотеку в репозиторий проекта (в новую папку libfoo). Разумеется, при этом хочется сохранить всю историю изменений.
+
+Disclaimer
+----------
+
+В этой записи я провожу все изменения прямо в самих репозиториях. Но при работе с реальными репозиториями я **крайне рекомендую** проводить подобные манипуляции исключительно с копиями Ваших репозиториев. Несмотря на то, что git в большинстве случаев старается сохранить пользовательские данные, некоторые из используемых нами команд способны **бесследно** удалить содержимое репозитория.
+
+Поэтому проводите все эксперименты на копиях рабочих репозиториев. Тем более, что клоны в git создаются очень быстро. А когда все манипуляции будут завершены, то репозитории можно синхронизировать через `push`/`pull`.
+
+В общем, я считаю, что предупредил Вас. Берегите свои данные!
+
+Переписываем путь к файлам
+--------------------------
+
+Первый шаг на пути к слиянию репозиториев <strike>в сладостном экстазе</strike> - это изменение пути к файлам в репозитории с библиотекой. Если сейчас файлы лежат в корне, то после наших манипуляций они должны переместиться в папку libfoo (которая будет расположена внутри репозитория libfoo).
+
+Добиться этого нам поможет термоядерная команда `git filter-branch`. [Она предназначена](http://www.kernel.org/pub/software/scm/git/docs/git-filter-branch.html) для активного редактирования истории в духе ["1984"](http://ru.wikipedia.org/wiki/1984_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD)). История изменяется непосредственно через изменение (точнее, пересоздание) коммитов, поэтому все правки необратимы. Неудачное применение `filter-branch` может отправить Ваш репозиторий на свалку.
+
+Поэтому внимательно следите за руками:
+
+    zloddey@zlosung:~/projects/libfoo$ git filter-branch --tree-filter 'mkdir libfoo; ls | grep -v libfoo | xargs -I{} mv {} libfoo' master
+    Rewrite 2e0560e5c43ec63096f975ea534c23d58274a341 (2/2)
+    Ref 'refs/heads/master' was rewritten
+
+Флаг `--tree-filter` командует git-у, что следующая за ним команда должна быть применена к каждому коммиту в цепочке (в нашем случае ко всей ветке master). Фильтрация пройдёт успешно только в том случае, когда команда завершается со статусом 0, и все коммиты удаётся наложить.
+
+Сама команда шелла тоже состоит из двух частей. Сначала мы создаём папку libfoo. Затем перемещаем в неё все файлы, *за исключением самой libfoo*. Типичный пример мощи шелла: с помощью пайпа <strike>и чьей-то матери</strike> составляем из базовых команд сложное действие, которое сделает за человека всю монотонную работу.
+
+Если мы не ошиблись в наборе команды, то git перепишет все коммиты репозитория и явит нам новую, улучшенную библиотеку libfoo:
+
+    libfoo
+    ∟ libfoo
+      ∟ include
+        ∟ foo.h
+      ∟ src
+        ∟ foo.c
+
+При этом сохранится вся история изменений (хотя, разумеется, изменятся хэши коммитов):
+
+    zloddey@zlosung:~/projects/libfoo$ git log --pretty=o
+    a98d0b1b6196831bf85f24517ece58a74317827b Fix critical bug
+    0286c0c223c611c35b8df9049a33189ab2e3d72c Awesome Foo library
+
+При желании можно скастовать `git log` на любой конкретный файл и убедиться, что с его историей тоже всё в порядке.
+
+Теперь можно заняться и самим слиянием.
+
+Объединяем репозитории
+----------------------
+
+Осталось совсем немного. Переходим в наш уберпроект mainproject и вытягиваем все коммиты из изменённого репозитория библиотеки:
+
+    zloddey@zlosung:~/projects/mainproject$ git remote add libfoo-source ../libfoo/
+    zloddey@zlosung:~/projects/mainproject$ git fetch libfoo-source
+    warning: no common commits
+    remote: Counting objects: 11, done.
+    remote: Compressing objects: 100% (4/4), done.
+    remote: Total 11 (delta 0), reused 0 (delta 0)
+    Unpacking objects: 100% (11/11), done.
+    From ../libfoo
+    * [new branch]      master     -> libfoo-source/master
+
+git будет удивлён, что удалённый репозиторий не имеет с нашим общих коммитов, и предупредит нас об этом. Не стоит беспокоиться - всё идёт по плану.
+
+Однако сам план зависит от того, как именно Вы хотите слить две ветки. Это зависит, главным образом, от принятой в Вашей команде политики управления ветками в репозитории.
+
+Можно пойти по [Linus-way](http://www.mail-archive.com/dri-devel@lists.sourceforge.net/msg39091.html) и слить две ветки через обычный merge. В таком случае создастся коммит, у которого будет два предка: один из libfoo, и один из mainproject:
+
+    zloddey@zlosung:~/projects/mainproject$ git branch
+    * master
+
+    zloddey@zlosung:~/projects/mainproject$ git merge libfoo-source/master
+    Merge made by the 'recursive' strategy.
+    libfoo/include/foo.h |    1 +
+    1 file changed, 1 insertion(+)
+    create mode 100644 libfoo/include/foo.h
+        create mode 100644 libfoo/src/foo.c
+
+    zloddey@zlosung:~/projects/mainproject$ git log --graph --pretty=oneline
+    *   6c15d2bbaab1ee5751f345ac67a9a1b2400b8476 Merge remote-tracking branch 'libfoo-source/master'
+    |\
+    | * a98d0b1b6196831bf85f24517ece58a74317827b Fix critical bug
+    | * 0286c0c223c611c35b8df9049a33189ab2e3d72c Awesome Foo library
+    * 88ed3223758ea3171ba4fccaf0098c85db38d348 Kill'em all!
+
+Есть и другой вариант. Например, мы на своём рабочем проекте запретили коммиты с несколькими родителями (ради простой линейной истории коммитов). В таком случае надо сливать ветки через `rebase`.
+
+    zloddey@zlosung:~/projects/mainproject$ git branch 
+    * master
+
+    zloddey@zlosung:~/projects/mainproject$ git checkout libfoo-source/master 
+    Note: checking out 'libfoo-source/master'.
+        (всякая болтовня git)
+    HEAD is now at a98d0b1... Fix critical bug
+
+    zloddey@zlosung:~/projects/mainproject$ git checkout -b new-master
+    Switched to a new branch 'new-master'
+
+    zloddey@zlosung:~/projects/mainproject$ git rebase master 
+    First, rewinding head to replay your work on top of it...
+    Applying: Awesome Foo library
+    Applying: Fix critical bug
+
+    zloddey@zlosung:~/projects/mainproject$ git checkout master 
+    Switched to branch 'master'
+
+    zloddey@zlosung:~/projects/mainproject$ git merge new-master 
+    Updating 88ed322..3641759
+    Fast-forward
+    libfoo/include/foo.h |    1 +
+     1 file changed, 1 insertion(+)
+     create mode 100644 libfoo/include/foo.h
+     create mode 100644 libfoo/src/foo.c
+
+    zloddey@zlosung:~/projects/mainproject$ git branch -d new-master 
+    Deleted branch new-master (was 3641759).
+
+    zloddey@zlosung:~/projects/mainproject$ git log --graph --pretty=o
+    * 36417598b9e390c15f9671e8940fc42392b5a4fa Fix critical bug
+    * d0934618c8316f5190ad57b6ebc67def61a0c096 Awesome Foo library
+    * 88ed3223758ea3171ba4fccaf0098c85db38d348 Kill'em all!
+
+И в любом случае не забываем подчистить удалённый репозиторий - он нам больше не нужен!
+
+    zloddey@zlosung:~/projects/mainproject$ git remote rm libfoo-source
+
+Что в итоге
+-----------
+
+Мы получили, что хотели: в репозитории mainproject появилась папка libfoo со всеми файлами из проекта libfoo (надеюсь, Вы *действительно* хотели именно этого!)
+
+    mainproject
+    ∟ libfoo
+      ∟ include
+        ∟ foo.h
+      ∟ src
+        ∟ foo.c
+    ∟ src
+      ∟ main.c
+
+При этом libfoo появился у нас не одним большим блобом, а в виде оригинальной последовательности коммитов. Так что, когда найдётся следующий баг в этой библиотеке, поиск через `git blame` укажет на реального автора косяка, а не на человека, который сливал репозитории (впрочем, если это одно и то же лицо, я умываю руки).
+
+Мораль всей басни: переписывайте свою историю и упорядочивайте репозитории на здоровье, но только помните:
+
+![pic](/images/bigbrotheriswatchingyou.jpg)
+
+<small>(Картинка [отсюда](http://ideonexus.com/2005/05/25/george-orwells-1984/))</small>
