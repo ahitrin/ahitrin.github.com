@@ -1,0 +1,103 @@
+---
+layout: post
+category : jekyll
+comments : true
+tags : [jekyll, twitterbootstrap, pygments]
+---
+{% include JB/setup %}
+
+В каждой культурной среде существуют свои определённые традиции. Например, хаскеллисты традиционно пишут туториалы по использованию монад. А пользователи jekyll традиционно пишут пост "Как включить подсветку кода". Внесу же и я свою скромную лепту в общий культурно-гумусный слой.
+
+По-умолчанию, jekyll уже поддерживает pygments, однако всё равно требуется проделать ряд телодвижений, чтобы код *действительно* стал подсвечиваться. Вот последовательность, которая помогла мне.
+
+Сначала ставим pygments (если их ещё нет). Например, через кошерный `pip`:
+
+{% highlight bash %}
+$ pip install pygments
+{% endhighlight %}
+
+Не забываем также обновить свои гемы - старый liquid может работать некорректно ;)
+
+{% highlight bash %}
+$ yum update
+{% endhighlight %}
+
+Проверяем, что конфиг `_config.yml` содержит указание использовать pygments:
+
+{% highlight yaml %}
+pygments: true
+{% endhighlight %}
+
+Создаём css-файл, который отвечает за стиль подсветки:
+
+{% highlight bash %}
+$ pygmentize -S trac -f html > stylesheets/pygments.css
+{% endhighlight %}
+
+Мне понравился стиль trac, и вы тоже можете поиграть с расцветкой кода:
+
+{% highlight bash %}
+$ ls /usr/share/pyshared/pygments/styles
+__init__.py
+autumn.py
+borland.py
+bw.py
+colorful.py
+default.py
+emacs.py
+friendly.py
+fruity.py
+manni.py
+monokai.py
+murphy.py
+native.py
+pastie.py
+perldoc.py
+tango.py
+trac.py
+vim.py
+vs.py
+{% endhighlight %}
+
+Добавляем ссылку на созданный нами файл в свой лэйаут. Я не стал мудрить, и тупо вписал одну строку в `_includes/themes/twitter/default.html` туда же, где указаны прочие стили:
+
+{% highlight html %}
+<link href="/stylesheets/pygments.css" rel="stylesheet">
+{% endhighlight %}
+
+На всякий случай исправляем дефолтный стиль в файле `bootstrap.min.css`, если у вас используется тема Twitter Bootstrap. Так рекомендуют [здесь](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html).
+
+{% highlight diff %}
+-code{padding:3px 4px;color:#d14;background-color:#f7f7f9;border:1px solid #e1e1e8;}
++code{padding:3px 4px;color:#d14;border:1px solid #e1e1e8;}
+{% endhighlight %}
+
+После этого всё должно работать.
+
+Пример
+======
+
+Для подсветки надо использовать liquid-теги. Пишем в markdown-исходник страницы что-нибудь вида:
+
+{&#37; highlight c linenos &#37;}<br>
+int main() {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;printf("Hello\n");<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+}<br>
+{&#37; endhighlight &#37;}
+
+И получаем симпатичный кусок кода:
+
+{% highlight c linenos %}
+int main() {
+    printf("Hello\n");
+    return 0;
+}
+{% endhighlight %}
+
+Если нам не нужна нумерация строк, то убираем слово linenos.
+
+Ссылки
+======
+
+Главная ссылка: [How to get Pygments to work with Jekyll](http://www.stehem.net/2012/02/14/how-to-get-pygments-to-work-with-jekyll.html)
