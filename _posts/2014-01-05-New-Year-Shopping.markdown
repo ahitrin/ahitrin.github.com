@@ -2,8 +2,8 @@
 layout: post
 title: Новогодний шоппинг
 category : misc
-comments : false
-tags : []
+comments : true
+tags : [books]
 ---
 {% include JB/setup %}
 
