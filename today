@@ -7,4 +7,4 @@ old_filename=$1
 today=`date +%Y-%m-%d`
 new_filename=`echo $old_filename | cut -c 18-`
 
-mv $old_filename _posts/$today$new_filename
+git mv $old_filename _posts/$today$new_filename
