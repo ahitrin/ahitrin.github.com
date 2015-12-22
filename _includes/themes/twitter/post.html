@@ -22,7 +22,9 @@
       </ul>
     </div>
     <hr>
+    {% if page.comments %}
     {% include JB/comments %}
+    {% endif %}
   </div>
   
   <div class="span4">
