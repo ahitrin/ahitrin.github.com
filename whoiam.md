@@ -16,7 +16,6 @@ group: navigation
 - [Facebook](https://www.facebook.com/andrey.hitrin)
 - [vk.com](http://vk.com/andrey.hitrin)
 - [LinkedIn](http://www.linkedin.com/in/andreyhitrin)
-- [Мой Круг](http://andrey-a-hitrin.moikrug.ru/)
 
 Выступления на конференциях
 ---
