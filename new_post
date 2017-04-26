@@ -12,7 +12,6 @@ cat <<-EOF > $file_name
 ---
 layout: post
 category : test
-comments : true
 tags : []
 ---
 {% include JB/setup %}
