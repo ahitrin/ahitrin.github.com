@@ -4,7 +4,8 @@
 # output: _drafts/topic-name.markdown
 
 topic_name=$@
-file_name=`echo _drafts/$topic_name.markdown | sed 's/\s/-/g'`
+short_name=`echo $topic_name | tr ' ' _`
+file_name=_drafts/$short_name.markdown
 touch $file_name
 
 cat <<-EOF > $file_name
