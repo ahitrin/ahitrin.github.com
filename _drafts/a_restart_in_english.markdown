@@ -18,10 +18,18 @@ For me, it should be a new motivating challenge, for community, new interesting 
 
 A quick overview of further plans:
 
-Q: What kind of content do you want to publish?
+**Q**: What kind of content do you want to publish?
 
-Q: What about comments? Will they appear?
+Mostly new thoughts and ideas (I do have some), and maybe few translations of old posts in Russian (only for the best ones).
 
-Q: New posts in Russian?
+**Q**: What about comments? Will they appear?
 
-Q: Will you separate Ru and En parts?
+It's quite possible!
+
+**Q**: New posts in Russian?
+
+Not sure.
+
+**Q**: Will you separate Ru and En parts?
+
+Not sure. Only in case it's requested.
