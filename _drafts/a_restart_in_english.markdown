@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A restart in English
-categories: work
+category: misc
 comments: true
 tags: 
 ---
