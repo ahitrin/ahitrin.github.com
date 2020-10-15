@@ -6,25 +6,25 @@ tags : []
 ---
 {% include JB/setup %}
 
-As a software developer, have you ever _fall into_ such situation?
+As a software developer, have you ever __fall into__ such situation?
 
 You start to implement some feature in your project.
 At the beginning, it looks very simple and innocent.
 But as you get in, few obstacles appear.
 You try to overcome them - and find new and new ones.
-Suddently it appears that your simple task has grown in size for *multiple* times.
+Suddently it appears that your simple task has grown in size for **multiple** times.
 
 Welcome to the fractal trap!
 
 You may find a good article about it
-https://jessitron.com/2020/09/19/code-is-a-coastline/[here].
+[here](https://jessitron.com/2020/09/19/code-is-a-coastline/).
 
-Fractal traps could come from different sources: code coupling, leaky abstractions, _and so on_.
+Fractal traps could come from different sources: code coupling, leaky abstractions, __and so on__.
 They are unavoidable.
 Most of developers (my guess) have to clash with them at least sometimes.
 
 But are we ready?
-Are our *tools* ready to deal with fractal complexity?
+Are our **tools** ready to deal with fractal complexity?
 
 Imagine we have a multi-step task.
 We have discovered these steps beforehand and transformed into a checklist.
