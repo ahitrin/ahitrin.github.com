@@ -19,7 +19,7 @@ Welcome to the fractal trap!
 You may find a good article about it
 [here](https://jessitron.com/2020/09/19/code-is-a-coastline/).
 
-Fractal traps could come from different sources: code coupling, leaky abstractions, __and so on__.
+Fractal traps could come from different sources: code coupling, leaky abstractions, feature interference, __and so on__.
 They are unavoidable.
 Most of developers (my guess) have to clash with them at least sometimes.
 
