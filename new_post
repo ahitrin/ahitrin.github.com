@@ -1,11 +1,10 @@
 #!/bin/bash
 
 # input: ./new_post topic name
-# output: _posts/current-date-topic-name.markdown
+# output: _drafts/topic-name.markdown
 
 topic_name=$@
-creation_date=`date +%Y-%m-%d`
-file_name=`echo _posts/$creation_date-$topic_name.markdown | sed 's/\s/-/g'`
+file_name=`echo _drafts/$topic_name.markdown | sed 's/\s/-/g'`
 touch $file_name
 
 cat <<-EOF > $file_name
