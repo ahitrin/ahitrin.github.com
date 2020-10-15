@@ -1,7 +1,7 @@
 ---
 layout: post
 category : test
-title: Fractals vs Lists
+title: Fractal Traps vs. Task Lists
 tags : []
 ---
 {% include JB/setup %}
