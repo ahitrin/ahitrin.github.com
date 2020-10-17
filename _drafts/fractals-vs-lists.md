@@ -31,7 +31,7 @@ We have discovered these steps beforehand and transformed into a checklist.
 And then we start to move through this list.
 Some steps appear to be simple, but other ones have suddently grown in size so they have become comparable to the parent!
 
-(an image)
+![test](/images/1.png)
 
 How can it be represented in a, say, Github tracker?
 We could apply different strategies to deal with a fractal explosion:
