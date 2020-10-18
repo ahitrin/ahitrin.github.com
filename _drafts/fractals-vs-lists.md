@@ -31,6 +31,8 @@ We have discovered these steps beforehand and transformed into a checklist.
 And then we start to move through this list.
 Some steps appear to be simple, but other ones have suddently grown in size so they have become comparable to the parent!
 
+**NB**: make an example in Sieben, use manual dot-export - and after improve manually
+
 ![test](/images/1.png)
 
 How can it be represented in a, say, Github tracker?
