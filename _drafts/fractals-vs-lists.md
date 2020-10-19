@@ -1,12 +1,14 @@
 ---
 layout: post
-category : test
-title: Fractal Traps vs. Task Lists
-tags : []
+category : work
+title: Why do we use linear approximations for fractals?
+tags : [fractal trap, SiebenApp]
 ---
 {% include JB/setup %}
 
-As a software developer, have you ever _fall into_ such situation?
+**N.B.**: we need to go deeper
+
+As a software developer, have you ever faced such situation?
 
 You start to implement some feature in your project.
 At the beginning, it looks very simple and innocent.
@@ -14,7 +16,7 @@ But as you get in, few obstacles appear.
 You try to overcome them - and find new and new ones.
 Suddently it appears that your simple task has grown in size for **multiple** times.
 
-Welcome to the fractal trap!
+Welcome to the _fractal trap_!
 
 You may find a good article about it
 [here](https://jessitron.com/2020/09/19/code-is-a-coastline/).
@@ -36,7 +38,7 @@ Some steps appear to be simple, but other ones have suddently grown in size so t
 
 ![test](/images/2.png)
 
-And then you need to go deeply...
+There might be a blocker or significant subtask for almost every simple step in your software project.
 
 ![test](/images/3.png)
 
