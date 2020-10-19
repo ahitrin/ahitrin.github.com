@@ -6,7 +6,7 @@ tags : []
 ---
 {% include JB/setup %}
 
-As a software developer, have you ever __fall into__ such situation?
+As a software developer, have you ever _fall into_ such situation?
 
 You start to implement some feature in your project.
 At the beginning, it looks very simple and innocent.
@@ -19,21 +19,31 @@ Welcome to the fractal trap!
 You may find a good article about it
 [here](https://jessitron.com/2020/09/19/code-is-a-coastline/).
 
-Fractal traps could come from different sources: code coupling, leaky abstractions, feature interference, __and so on__.
-They are unavoidable.
+Fractal traps could come from different sources: code coupling, leaky abstractions, feature interference, _and so on_.
+They are almost unavoidable.
 Most of developers (my guess) have to clash with them at least sometimes.
 
 But are we ready?
 Are our **tools** ready to deal with fractal complexity?
 
 Imagine we have a multi-step task.
-We have discovered these steps beforehand and transformed into a checklist.
+We have discovered these steps beforehand and transformed into a simple checklist.
+
+![test](/images/1.png)
+
 And then we start to move through this list.
 Some steps appear to be simple, but other ones have suddently grown in size so they have become comparable to the parent!
 
-**NB**: make an example in Sieben, use manual dot-export - and after improve manually
+![test](/images/2.png)
 
-![test](/images/1.png)
+And then you need to go deeply...
+
+![test](/images/3.png)
+
+And finally, you've found that changes are not covered with tests.
+Much bad!
+
+![test](/images/4.png)
 
 How can it be represented in a, say, Github tracker?
 We could apply different strategies to deal with a fractal explosion:
@@ -42,16 +52,13 @@ We could apply different strategies to deal with a fractal explosion:
 * extract big steps into separate tasks (lack of connectivity; more manual work)
 * something more?
 
-(images; before and after)
+![test](/images/5.png)
 
-
-Размышляю, как они поддерживают рост глубины.
-
-А что, если мы пытаемся решить задачу типа mikado method?
-
-Сколько уровней вложенности будет там?
+Well, sometimes it's just fine...
 
 Частично помогают ссылки между задачами, но они лишают возможности видеть цельную картину.
+
+Вдобавок, у нас нет гарантий, что каждая из подзадач не вырастет аналогичным образом (легаси такой легаси).
 
 Есть Gantt-диаграммы, но они пугают всех, кроме менеджеров :)
 

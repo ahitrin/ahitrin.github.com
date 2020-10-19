@@ -1,4 +1,0 @@
-digraph g {
-    node[shape=box];
-    task1 [label="Implement a feature"];
-}

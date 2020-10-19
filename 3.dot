@@ -1,0 +1,28 @@
+digraph g {
+node [shape=box, color=red];
+edge [color=black];
+subgraph cluster_0 {
+    color=orange;
+    label = "An original task (has grown 2x in size)";
+2 [label="1: Preliminate refactoring
+(&quot;make a change easy&quot;)"];
+3 [label="2: Implement the feature itself
+(&quot;make an easy change&quot;)"];
+4 [label="3: Few postponed cleanups"];
+5 [label="1.2: Extract some code
+into new module"];
+6 [label="1.1: Migrate config files
+to the new format"];
+7 [label="1.1.1: Find and wrap all
+places where old config
+format is used"];
+8 [label="1.2.1: Break unexpected
+circular references in code"];
+2 -> 3;
+3 -> 4;
+5 -> 2;
+6 -> 2;
+8 -> 5;
+7 -> 6;
+}
+}

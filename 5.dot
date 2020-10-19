@@ -1,0 +1,51 @@
+digraph g {
+node [shape=box, color=red];
+edge [color=lightgrey];
+
+subgraph cluster_0 {
+    color=orange;
+    edge [color=black];
+    label = "An original task";
+
+    3 [label="1: Implement the feature itself
+(&quot;make an easy change&quot;)"];
+    4 [label="2: Few postponed cleanups"];
+    3 -> 4;
+}
+
+subgraph cluster_1 {
+    color=navy;
+    edge [color=black];
+    label = "Subtask: config migrations";
+    6 [label="2: Migrate config files
+to the new format"];
+    7 [label="1: Find and wrap all
+places where old config
+format is used"];
+    7 -> 6;
+}
+
+subgraph cluster_2 {
+    color=green;
+    label = "Subtask: code cleanup";
+    edge [color=black];
+    5 [label="2: Extract some code
+into new module"];
+    8 [label="1: Break unexpected
+circular references in code"];
+    8 -> 5;
+}
+
+subgraph cluster_3 {
+    label = "Subtask: add more tests";
+    color = lightblue;
+
+    9 [label="1. Add few tests on
+legacy code"];
+}
+
+5 -> 3;
+6 -> 3;
+9 -> 7;
+9 -> 8;
+}
