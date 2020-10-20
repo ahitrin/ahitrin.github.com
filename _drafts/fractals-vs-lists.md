@@ -20,13 +20,13 @@ Welcome to the _fractal trap_!
 
 You may find a good article about it
 [here](https://jessitron.com/2020/09/19/code-is-a-coastline/).
+**N.B.**: move to approptiate place.
 
-Fractal traps could come from different sources: code coupling, leaky abstractions, feature interference, _and so on_.
+Fractal traps may come from different sources: code coupling, leaky abstractions, feature interference, _and so on_.
 They are almost unavoidable.
 Most of developers (my guess) have to clash with them at least sometimes.
 
-But are we ready?
-Are our **tools** ready to deal with fractal complexity?
+But are our **tools** really good in dealing with fractal complexity?
 
 Imagine we have a multi-step task.
 We have discovered these steps beforehand and transformed into a simple checklist.
