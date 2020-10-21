@@ -58,11 +58,11 @@ We could apply different strategies to deal with a fractal explosion:
 
 Well, sometimes it's just fine...
 
-Частично помогают ссылки между задачами, но они лишают возможности видеть цельную картину.
-
-Вдобавок, у нас нет гарантий, что каждая из подзадач не вырастет аналогичным образом (легаси такой легаси).
-
-Есть Gantt-диаграммы, но они пугают всех, кроме менеджеров :)
+But there is a serious dilemma hidden in usual "linear" task manager.
+In one hand, if you don't split tasks they become big and messy.
+In other hand, when you split tasks it becomes too easy to lose _connections_ between tasks.
+It becomes too hard to see the whole picture.
+It becomes unclear when a single issue causes a bottleneck for several features.
 
 Я попробовал использовать древовидный подход - посмотрите на Sieben.
 
