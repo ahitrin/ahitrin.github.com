@@ -8,13 +8,13 @@ tags : [fractal trap, SiebenApp]
 
 **N.B.**: we need to go deeper
 
-As a software developer, have you ever faced such situation?
+as a software developer, have you ever faced such situation?
 
-You start to implement some feature in your project.
-At the beginning, it looks very simple and innocent.
-But as you get in, few obstacles appear.
-You try to overcome them - and find new and new ones.
-Suddently it appears that your simple task has grown in size for **multiple** times.
+you start to implement some feature in your project.
+at the beginning, it looks very simple and innocent.
+but as you get in, few obstacles appear.
+you try to overcome them - and find new and new ones.
+suddently it appears that your simple task has grown in size for **multiple** times.
 
 Welcome to the _fractal trap_!
 
@@ -68,7 +68,7 @@ Why is this happening?
 My guess is: because most tools are task-oriented, and relations between these tasks are second-class citizens.
 How can you spot the fractal structure when the only thing you get is a big pile of tickets?
 
-(image)
+![test](/images/6.png)
 
 Я попробовал использовать древовидный подход - посмотрите на Sieben.
 
