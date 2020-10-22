@@ -64,6 +64,12 @@ In other hand, when you split tasks it becomes too easy to lose _connections_ be
 It becomes too hard to see the whole picture.
 It becomes unclear when a single issue causes a bottleneck for several features.
 
+Why is this happening?
+My guess is: because most tools are task-oriented, and relations between these tasks are second-class citizens.
+How can you spot the fractal structure when the only thing you get is a big pile of tickets?
+
+(image)
+
 Я попробовал использовать древовидный подход - посмотрите на Sieben.
 
 Предупреждение: forever alpha, пет-проджект, очень неторопливое развитие.
