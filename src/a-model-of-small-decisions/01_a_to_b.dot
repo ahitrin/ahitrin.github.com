@@ -1,0 +1,17 @@
+digraph g {
+    node [shape=circle];
+    rankdir="LR";
+    A [label="Start", color=red, shape=ellipse];
+    B [label="Goal", color=gold, shape=ellipse];
+
+    i1 [label="", style="bold,filled", fillcolor=lightgrey];
+    i2 [label="", style="bold,filled", fillcolor=lightgrey];
+    i3 [label="", style="bold,filled", fillcolor=lightgrey];
+    i4 [label="", style="bold,filled", fillcolor=lightgrey];
+
+    A -> i1 [style=bold];
+    i1 -> i2 [style=bold];
+    i2 -> i3 [style=bold];
+    i3 -> i4 [style=bold];
+    i4 -> B [style=bold];
+}
