@@ -334,7 +334,7 @@ Is it filled with obvious things?
 
 Comments on this blog are not available yet (sorry!), so I'd like to ask you leave comments under the following tweet:
 
-**TODO**
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">My new blog on programmer productivity: &quot;A model of small decisions&quot; <a href="https://t.co/Pq5ErHztk6">https://t.co/Pq5ErHztk6</a></p>&mdash; Andrey Hitrin (@ahitrin) <a href="https://twitter.com/ahitrin/status/1323557869984370688?ref_src=twsrc%5Etfw">November 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ## References
 
