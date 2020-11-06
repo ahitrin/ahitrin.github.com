@@ -4,7 +4,7 @@
 # output: _drafts/topic-name.markdown
 
 topic_name=$@
-short_name=`echo $topic_name | tr ' ' _`
+short_name=`echo $topic_name | tr ' ' -`
 file_name=_drafts/$short_name.markdown
 touch $file_name
 
