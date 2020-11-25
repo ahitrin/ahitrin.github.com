@@ -74,7 +74,7 @@ Actual consequences of your changes, potential consequences, potential compatibi
 Of course, this typical problem has very typical solution.
 Let's proceed to it.
 
-## Task split!
+## The modern approach
 
 **TODO**: work here
 
@@ -96,6 +96,8 @@ Because most tools are task-oriented, and relations between these tasks are seco
 How can you spot the fractal structure when the only thing you get is a big pile of tickets?
 
 ![test](/images/fractals-vs-lists/6.png)
+
+## New approach?
 
 Я попробовал использовать древовидный подход - посмотрите на Sieben.
 
