@@ -12,7 +12,7 @@ I bet you have.
 You start to implement some feature in your project.
 At the beginning, it looks very simple and innocent.
 But as you get in, few obstacles appear.
-You try to overcome them - and find new and new ones.
+You try to overcome them - and find new and new ones!
 Suddently it appears that your simple task has grown in size for **multiple** times.
 
 ## Welcome to the _fractal trap_!
@@ -39,17 +39,20 @@ Much bad!
 
 ![test](/images/fractals-vs-lists/4.png)
 
+Of course, it's not a rant against refactoring or tests!
+They are truly needed, especially in complex and aged codebases.
+I rant against the way we've used to deal with tasks.
+
 Fractal traps usually come from different sources: code coupling, leaky abstractions, and so on.
 They are almost unavoidable.
 I think it wouldn't be wrong to claim that the most of developers have to clash with them at least sometimes.
+But how do we usually deal with such kind of problem?
 
-But how do we usually deal with such kind of _fractal explosion_?
+## See no evil 🙈
 
-## See no evil!
-
-A very common approach to deal with this problem is simple ignorance.
+A very common approach to deal with this problem is a simple ignorance.
 Each task is growing in size?
-Ok, deal with it.
+Ok, let's deal with it.
 Just keep it going until the final goal is achieved.
 
 Alas, by keeping all substeps in the same task we make them quite opaque.
