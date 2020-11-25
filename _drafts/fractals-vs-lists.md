@@ -22,22 +22,22 @@ Let's explore an imaginary (but quite typical) situation.
 Say we have a multi-step task.
 We have discovered these steps beforehand and transformed into a simple straightforward-looking checklist.
 
-![test](/images/1.png)
+![test](/images/fractals-vs-lists/1.png)
 
 And then we start to move through this list.
 
 Few steps appear to be simple, but the others have suddently grown in size so they have become comparable to the parent!
 
-![test](/images/2.png)
+![test](/images/fractals-vs-lists/2.png)
 
 There might be a _blocker_ or significant subtask for almost every simple step in your software project.
 
-![test](/images/3.png)
+![test](/images/fractals-vs-lists/3.png)
 
 And finally, you've found that code needed to be changed is not covered with tests.
 Much bad!
 
-![test](/images/4.png)
+![test](/images/fractals-vs-lists/4.png)
 
 Fractal traps usually come from different sources: code coupling, leaky abstractions, and so on.
 They are almost unavoidable.
@@ -71,7 +71,7 @@ Let's take a closer look.
 
 Extract big steps into separate tasks (lack of connectivity; more manual work)
 
-![test](/images/5.png)
+![test](/images/fractals-vs-lists/5.png)
 
 But there is a serious dilemma hidden in usual "linear" task manager.
 In one hand, if you don't split tasks they become big and messy.
@@ -84,7 +84,7 @@ It becomes unclear when a single issue causes a bottleneck for several features.
 Because most tools are task-oriented, and relations between these tasks are second-class citizens.
 How can you spot the fractal structure when the only thing you get is a big pile of tickets?
 
-![test](/images/6.png)
+![test](/images/fractals-vs-lists/6.png)
 
 Я попробовал использовать древовидный подход - посмотрите на Sieben.
 
