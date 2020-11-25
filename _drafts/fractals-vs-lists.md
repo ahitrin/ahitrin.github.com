@@ -48,9 +48,9 @@ They are almost unavoidable.
 I think it wouldn't be wrong to claim that the most of developers have to clash with them at least sometimes.
 But how do we usually deal with such kind of problem?
 
-## See no evil 🙈
+## A classical approach 🙈
 
-A very common approach to deal with this problem is a simple ignorance.
+The most naive approach to deal with this problem is a simple ignorance.
 Each task is growing in size?
 Ok, let's deal with it.
 Just keep it going until the final goal is achieved.
@@ -59,18 +59,24 @@ Alas, by keeping all substeps in the same task we make them quite opaque.
 _Something_ is happening in the task, and it will be finished _someday_.
 
 Sometimes it's just fine...
-Sometimes it's not.
+But often it's not.
 
 For example, let's imagine that your project have a strict delivering policy.
 You cannot deliver your code until it's "done".
 This means you have to roll all your changes altogether.
+How long your feedback cycle will become?
+How many code conflicts you'll have to resolve during the merge?
 
-**TODO** cogintive load, slow feedback cycle.
+Also, you should mind the cognitive load.
+The bigger is your task, the more nuances you have to keep in your head.
+Actual consequences of your changes, potential consequences, potential compatibility breaks, questions you're unsure about, and so on.
 
-I usually see people tending to the typical "improvement" of this situation.
-Let's take a closer look.
+Of course, this typical problem has very typical solution.
+Let's proceed to it.
 
 ## Task split!
+
+**TODO**: work here
 
 Extract big steps into separate tasks (lack of connectivity; more manual work)
 
@@ -81,6 +87,8 @@ In one hand, if you don't split tasks they become big and messy.
 In other hand, when you split tasks it becomes too easy to lose _connections_ between tasks.
 It becomes too hard to see the whole picture.
 It becomes unclear when a single issue causes a bottleneck for several features.
+
+**NB**: Trunk-based development
 
 ## Respect the structure
 
@@ -105,7 +113,7 @@ This article wouldn't appear without influence of following people:
 2. [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund) with their ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book have changed my way of thinkning about tasks.
 After several years of practicing I find it way more natural, easy and practical than the classical big-ticket-oriented approach.
 3. [Sergey Tslovalnikov](https://twitter.com/SerCeMan), my Russian ex-coleague, gave me much ehough courage to write in English.
-His [blog](https://serce.me/archives/).
+Check out his [blog](https://serce.me/archives/).
 
 ## Comments
 
