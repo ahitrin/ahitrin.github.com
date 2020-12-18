@@ -5,7 +5,6 @@ comments : true
 title: О темпоральной логике
 tags : [continuous integration, continous delivery]
 ---
-{% include JB/setup %}
 
 Давеча позволил себе немного пожаловаться в твиттер:
 

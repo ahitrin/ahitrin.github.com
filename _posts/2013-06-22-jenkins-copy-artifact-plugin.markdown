@@ -4,7 +4,6 @@ category : work
 comments : true
 tags : [jenkins, continuous integration]
 ---
-{% include JB/setup %}
 
 Допустим, у вас есть несколько задач в Jenkins, и между ними надо передавать параметры. Например, номер версии.
 

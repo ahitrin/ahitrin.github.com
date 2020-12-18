@@ -4,7 +4,6 @@ category : work
 comments : true
 tags : [git, ssh, putty]
 ---
-{% include JB/setup %}
 
 ![pic](/images/PuTTY_NoWay.png)
 

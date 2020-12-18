@@ -4,7 +4,6 @@ category : work
 comments : true
 tags : [trello, GTD, checklist]
 ---
-{% include JB/setup %}
 
 ![pic](/images/trello-checklist.png)
 

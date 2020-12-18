@@ -4,7 +4,6 @@ layout: post
 category : work
 tags : [docker, vagrant, postgresql, strace]
 ---
-{% include JB/setup %}
 
 Интересную проблему удалось решить вчера.
 

@@ -4,7 +4,6 @@ category : work
 comments : true
 tags : [testing, robot framework]
 ---
-{% include JB/setup %}
 
 [Robot Framework](http://robotframework.googlecode.com) - мощный и гибкий фреймворк для создания собственной системы тестирования. Я работаю с ним около года, и до сих пор восхищаюсь, насколько логично и удобно он устроен.
 

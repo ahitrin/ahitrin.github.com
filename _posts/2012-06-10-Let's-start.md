@@ -4,7 +4,6 @@ category : test
 comments : true
 tags : [jekyll]
 ---
-{% include JB/setup %}
 
 # Статическая генерация сайтов
 

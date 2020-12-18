@@ -4,7 +4,6 @@ layout: post
 category : work
 tags : [job]
 ---
-{% include JB/setup %}
 
 Собственно, вся новость в заголовке.
 

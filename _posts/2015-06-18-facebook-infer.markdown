@@ -4,7 +4,6 @@ category : work
 comments : true
 tags : [java, ServerAccess, static analysis]
 ---
-{% include JB/setup %}
 
 На днях Facebook выпустил [новую утилиту](http://fbinfer.com/) для статического анализа кода на Java/C.
 Не смог пройти мимо, решил натравить его на [ServerAccess](https://github.com/apatrushev/ServerAccess).

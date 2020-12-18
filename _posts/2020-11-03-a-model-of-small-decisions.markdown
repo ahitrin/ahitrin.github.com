@@ -4,7 +4,6 @@ category : work
 title: A model of small decisions
 tags : [model of small decisions, productivity]
 ---
-{% include JB/setup %}
 
 ![a dence forest](/images/a-model-of-small-decisions/forest.jpg)
 <small>Would you like to walk here at night? Photo: Andrey Hitrin</small>

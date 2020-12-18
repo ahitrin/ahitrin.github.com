@@ -5,7 +5,6 @@ category : misc
 comments : true
 tags : [mindmap, neo4j, ServerAccess]
 ---
-{% include JB/setup %}
 
 В голове уже очень долго созревала одна идея, и вчера она наконец-то материализовалась в своего рода озарение.
 
