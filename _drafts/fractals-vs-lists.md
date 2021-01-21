@@ -67,14 +67,14 @@ This means you have to roll all your changes altogether.
 How long your feedback cycle will become?
 How many code conflicts you'll have to resolve during the merge?
 
-Also, you should mind the cognitive load.
+Also, you should mind the cognitive load!
 The bigger is your task, the more nuances you have to keep in your head.
 Actual consequences of your changes, potential consequences, potential compatibility breaks, questions you're unsure about, and so on.
 
 Of course, this typical problem has very typical solution.
 Let's proceed to it.
 
-## The modern approach
+## Divide and conquer ⚔
 
 **TODO**: work here
 
