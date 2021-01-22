@@ -3,6 +3,7 @@ layout: page
 title: Who am I / Кто я такой
 header: Who am I / Кто я такой
 group: navigation
+permalink: /whoami/
 ---
 
 ![My photo](/images/face.jpg)
