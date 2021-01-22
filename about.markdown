@@ -5,6 +5,8 @@ header: Who am I / Кто я такой
 group: navigation
 ---
 
+![My photo](/images/face.jpg)
+
 ## English
 
 Hi! My name is **Andrei Khitrin**.
@@ -13,7 +15,7 @@ In case you prefer English-like names, **Andrew** is still fine.
 
 I'm a "passionate programmer" with ~20 years of experience.
 Here I post my thoughts on programming.
-No politics, sports, news, cars and other irrelevant stuff.
+No politics, sports, news, cars or other _irrelevant stuff_.
 
 My other places to visit:
 
@@ -21,7 +23,7 @@ My other places to visit:
 - Telegram: @ahitrin. A good way to send me a ping also.
 - [GitHub](https://github.com/ahitrin): here my public code lives.
 - [Habr](http://habr.com/users/zloddey/): some articles in Russian (less than here, but with more comments!)
-- Mail: `${also_suitable_name}@gmail.com` -- expect slower feedback from here.
+- Mail: (_see at the bottom of the page_) -- expect slower feedback from here.
 - [LinkedIn](http://www.linkedin.com/in/andreyhitrin) -- expect even slower feedback.
 
 ## Русский
