@@ -1,7 +1,7 @@
 ---
 layout: post
 category : jekyll
-title: Back to Jekyll default
+title: Back to Jekyll defaults
 tags : []
 ---
 
