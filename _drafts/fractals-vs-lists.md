@@ -4,7 +4,6 @@ category : work
 title: Why do we use linear approximations for fractals?
 tags : [fractal trap, SiebenApp]
 ---
-{% include JB/setup %}
 
 As a software developer, have you ever faced such situation?
 I bet you have.
