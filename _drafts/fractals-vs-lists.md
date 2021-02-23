@@ -17,7 +17,6 @@ Suddently it appears that your simple task has grown in size for **multiple** ti
 ## Welcome to the _fractal trap_!
 
 Let's explore an imaginary (but quite typical) situation.
-
 Say we have a multi-step task.
 We have discovered these steps beforehand and transformed into a simple straightforward-looking checklist.
 
@@ -25,7 +24,7 @@ We have discovered these steps beforehand and transformed into a simple straight
 
 And then we start to move through this list.
 
-Few steps appear to be simple, but the others have suddently grown in size so they have become comparable to the parent!
+Some steps appear to be simple, but the others have suddently grown in size so they have become comparable to the parent!
 
 ![test](/images/fractals-vs-lists/2.png)
 
@@ -47,7 +46,7 @@ They are almost unavoidable.
 I think it wouldn't be wrong to claim that the most of developers have to clash with them at least sometimes.
 But how do we usually deal with such kind of problem?
 
-## A classical approach 🙈
+## A classical approach
 
 The most naive approach to deal with this problem is a simple ignorance.
 Each task is growing in size?
@@ -73,7 +72,7 @@ Actual consequences of your changes, potential consequences, potential compatibi
 Of course, this typical problem has very typical solution.
 Let's proceed to it.
 
-## Divide and conquer ⚔
+## Divide and conquer
 
 **TODO**: work here
 
