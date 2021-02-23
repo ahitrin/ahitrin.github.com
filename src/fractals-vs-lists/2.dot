@@ -7,12 +7,12 @@ subgraph cluster_0 {
     subgraph cluster_1 {
         color = green;
         label="1: Preliminate refactoring
-        (&quot;make a change easy&quot;)";
+(&quot;make a change easy&quot;)";
 
         5 [label="1.2: Extract some code
-        into new module"];
+into new module"];
         6 [label="1.1: Migrate config files
-        to the new format"];
+to the new format"];
     }
 3 [label="2: Implement the feature itself
 (&quot;make an easy change&quot;)"];

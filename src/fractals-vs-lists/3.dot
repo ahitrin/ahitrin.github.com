@@ -7,16 +7,16 @@ subgraph cluster_0 {
     subgraph cluster_1 {
         color = green;
         label="1: Preliminate refactoring
-        (&quot;make a change easy&quot;)";
+(&quot;make a change easy&quot;)";
 
         subgraph cluster_2 {
             label = "";
             color = lightblue;
             6 [label="1.1: Migrate config files
-            to the new format"];
+to the new format"];
             7 [label="1.1.1: Find and wrap all
-            places where old config
-            format is used"];
+places where old config
+format is used"];
             7 -> 6;
         }
 
@@ -24,9 +24,9 @@ subgraph cluster_0 {
             color = grey;
             label = "";
             5 [label="1.2: Extract some code
-            into new module"];
+into new module"];
             8 [label="1.2.1: Break unexpected
-            circular references in code"];
+circular references in code"];
             8 -> 5;
         }
     }
