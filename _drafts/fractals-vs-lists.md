@@ -5,14 +5,14 @@ title: Why do we use linear approximations for fractals?
 tags : [fractal trap, SiebenApp]
 ---
 
-As a software developer, have you ever faced such situation?
+As a software developer, have you ever faced such a situation?
 I bet you have.
 
 You start to implement some feature in your project.
 At the beginning, it looks very simple and innocent.
 But as you get in, few obstacles appear.
 You try to overcome them - and find new and new ones!
-Suddently it appears that your simple task has grown in size for **multiple** times.
+Suddenly it appears that your simple task has grown in size for **multiple** times.
 
 ## Welcome to the _fractal trap_!
 
@@ -24,7 +24,7 @@ We have discovered these steps beforehand and transformed into a simple straight
 
 And then we start to move through this list.
 
-Some steps appear to be simple, but the others have suddently grown in size so they have become comparable to the parent!
+Some steps appear to be simple, but the others have suddenly grown in size, so they have become comparable to the parent!
 
 ![test](/images/fractals-vs-lists/2.png)
 
@@ -43,8 +43,8 @@ I rant against the way we've used to deal with tasks.
 
 Fractal traps usually come from different sources: code coupling, leaky abstractions, and so on.
 They are almost unavoidable.
-I think it wouldn't be wrong to claim that the most of developers have to clash with them at least sometimes.
-But how do we usually deal with such kind of problem?
+I think it wouldn't be wrong to claim that the most developers have to clash with them at least sometimes.
+But how do we usually deal with such a kind of problem?
 
 ## A classical approach
 
