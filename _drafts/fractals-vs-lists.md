@@ -10,36 +10,43 @@ I bet you have.
 
 You start to implement some feature in your project.
 At the beginning, it looks very simple and innocent.
-But as you get in, few obstacles appear.
+Soon, as you get in, few obstacles appear.
 You try to overcome them - and find new and new ones!
 Suddenly it appears that your simple task has grown in size for **multiple** times.
 
 ## Welcome to the _fractal trap_!
 
 Let's explore an imaginary (but quite typical) situation.
-Say we have a multi-step task.
-We have discovered these steps beforehand and transformed into a simple straightforward-looking checklist.
+Say you have a "software project": a big pile of code, and some kind of "task tracker" used to plan a work upon this code.
+At the beginning of a new week you choose a single "task" from this tracker and start to work on it.
+This task has already been estimated and split into a simple, straightforward-looking checklist.
 
 ![test](/images/fractals-vs-lists/1.png)
 
-And then we start to move through this list.
-
-Some steps appear to be simple, but the others have suddenly grown in size, so they have become comparable to the parent!
+Then you simply start to move through this list.
+At the first glance, these steps appear to be simple, but when you dig into the first one, it suddenly grows in size.
 
 ![test](/images/fractals-vs-lists/2.png)
 
 There might be a _blocker_ or significant subtask for almost every simple step in your software project.
+Your "first subtask" grows more and more, becoming comparable in size to the whole original task.
 
 ![test](/images/fractals-vs-lists/3.png)
 
-And finally, you've found that code needed to be changed is not covered with tests.
-Much bad!
+Finally, you've found that code needed to be changed is not covered with tests.
+Much bad, need to fix it!
 
 ![test](/images/fractals-vs-lists/4.png)
 
 Of course, it's not a rant against refactoring or tests!
 They are truly needed, especially in complex and aged codebases.
 I rant against the way we've used to deal with tasks.
+
+![sierpinski triangle](/images/fractals-vs-lists/Sierpinski_triangle.svg)
+
+<small>Sierpiński triangle, image from [Wikipedia](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle)</small>
+
+**TODO**: define "fractal trap" term
 
 Fractal traps usually come from different sources: code coupling, leaky abstractions, and so on.
 They are almost unavoidable.
@@ -48,7 +55,7 @@ But how do we usually deal with such a kind of problem?
 
 ## A classical approach
 
-The most naive approach to deal with this problem is a simple ignorance.
+The most naive approach to handle this problem is a simple ignorance.
 Each task is growing in size?
 Ok, let's deal with it.
 Just keep it going until the final goal is achieved.
@@ -56,12 +63,10 @@ Just keep it going until the final goal is achieved.
 Alas, by keeping all substeps in the same task we make them quite opaque.
 _Something_ is happening in the task, and it will be finished _someday_.
 
-Sometimes it's just fine...
-But often it's not.
-
+Is it fine or not, strongly depends on your working environment and team agreements.
 For example, let's imagine that your project have a strict delivering policy.
-You cannot deliver your code until it's "done".
-This means you have to roll all your changes altogether.
+You have to deliver all your code at once, because of rigid "task lifecycle".
+This means you have to roll it out only after having done the last substep.
 How long your feedback cycle will become?
 How many code conflicts you'll have to resolve during the merge?
 
