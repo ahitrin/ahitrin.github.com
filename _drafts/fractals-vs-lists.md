@@ -113,6 +113,8 @@ Visit all of them and take a look.
 * **Which task has the higher priority**?
 Use priorities ("senseless crap"/"normal task"/"critical"/"super-duper critical"/"needed yesterday") you've assigned to them manually.
 Of course, you should better ignore the fact that your "super-duper critical" task could easily be blocked by some "senseless crap".
+  
+**TODO**: end here
 
 It becomes unclear when a single issue causes a bottleneck for several features.
 
