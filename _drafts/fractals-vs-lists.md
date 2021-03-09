@@ -21,36 +21,38 @@ Say you have a "software project": a big pile of code, and some kind of "task tr
 At the beginning of a new week you choose a single "task" from this tracker and start to work on it.
 This task has already been estimated and split into a simple, straightforward-looking checklist.
 
-![test](/images/fractals-vs-lists/1.png)
+![An original task](/images/fractals-vs-lists/1.png)
 
 Then you simply start to move through this list.
 At the first glance, these steps appear to be simple, but when you dig into the first one, it suddenly grows in size.
 
-![test](/images/fractals-vs-lists/2.png)
+![An original task becomes a little bigger](/images/fractals-vs-lists/2.png)
 
 There might be a _blocker_ or significant subtask for almost every simple step in your software project.
 Your "first subtask" grows more and more, becoming comparable in size to the whole original task.
 
-![test](/images/fractals-vs-lists/3.png)
+![An original task has grown 2x in size](/images/fractals-vs-lists/3.png)
 
 Finally, you've found that code needed to be changed is not covered with tests.
 Much bad, need to fix it!
 
-![test](/images/fractals-vs-lists/4.png)
+![We're in the fractal trap!](/images/fractals-vs-lists/4.png)
 
 Of course, it's not a rant against refactoring or tests!
 They are truly needed, especially in complex and aged codebases.
 I rant against the way we've used to deal with tasks.
 
-![sierpinski triangle](/images/fractals-vs-lists/Sierpinski_triangle.svg)
+![Sierpinski triangle](/images/fractals-vs-lists/Sierpinski_triangle.svg)
 
 <small>Sierpiński triangle, image from [Wikipedia](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle)</small>
 
-**TODO**: define "fractal trap" term
-
-Fractal traps usually come from different sources: code coupling, leaky abstractions, and so on.
+Like a [fractal](https://en.wikipedia.org/wiki/Fractal), a software development task could easily hide few another subtasks with comparable size and/or complexity.
+They could be invisible to you until you face them.
+That's why I call this "a trap".
+Fractal traps usually come from different sources: code coupling, leaky abstractions, requirements shift, and so on.
 They are almost unavoidable.
 I think it wouldn't be wrong to claim that the most developers have to clash with them at least sometimes.
+
 But how do we usually deal with such a kind of problem?
 
 ## A classical approach
@@ -79,16 +81,32 @@ Let's proceed to it.
 
 ## Divide and conquer
 
-**TODO**: work here
+Once you got tired of big tasks, you start to split it into pieces.
+In your new working process, each subtask is allowed to become a full-pledged task in your tracker once you notice it's big enough.
+Like this:
 
-Extract big steps into separate tasks (lack of connectivity; more manual work)
+![4 tasks instead of 1](/images/fractals-vs-lists/5.png)
 
-![test](/images/fractals-vs-lists/5.png)
+Oh, wait!..
 
-But there is a serious dilemma hidden in usual "linear" task manager.
-In one hand, if you don't split tasks they become big and messy.
-In other hand, when you split tasks it becomes too easy to lose _connections_ between tasks.
-It becomes too hard to see the whole picture.
+Actually, you'll usually see it like this:
+
+```
+Ticket      Label                       Assignee
+----        ----                        ----
+#1          An original task            Fellow developer
+#2          Config migrations           Fellow developer
+#3          Code cleanup                Fellow developer
+#4          Add more tests              Fellow developer
+```
+
+With splitting your task into subtasks, you usually have to pay a new tax: a tax of manual dependency management.
+
+>But there is a serious dilemma hidden in usual "linear" task manager.
+>In one hand, if you don't split tasks they become big and messy.
+>In other hand, when you split tasks it becomes too easy to lose _connections_ between tasks.
+>It becomes too hard to see the whole picture.
+
 It becomes unclear when a single issue causes a bottleneck for several features.
 
 **NB**: Trunk-based development
@@ -97,8 +115,6 @@ It becomes unclear when a single issue causes a bottleneck for several features.
 
 Because most tools are task-oriented, and relations between these tasks are second-class citizens.
 How can you spot the fractal structure when the only thing you get is a big pile of tickets?
-
-![test](/images/fractals-vs-lists/6.png)
 
 ## New approach?
 
