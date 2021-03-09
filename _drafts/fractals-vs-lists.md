@@ -101,11 +101,18 @@ Ticket      Label                       Assignee
 ```
 
 With splitting your task into subtasks, you usually have to pay a new tax: a tax of manual dependency management.
+Starting from now, yours every _decision_ about task priority gains an additional cost (depending on the tracker, of course).
+When you ask a question about relations between tasks, you have to visit one or several of them to find a question:
 
->But there is a serious dilemma hidden in usual "linear" task manager.
->In one hand, if you don't split tasks they become big and messy.
->In other hand, when you split tasks it becomes too easy to lose _connections_ between tasks.
->It becomes too hard to see the whole picture.
+* **Is there anything that prevents us to start work on task #1**?
+Well, dig into it and check whether there is any "blocker task" on a card.
+
+* **Which tasks have no blockers**?
+Visit all of them and take a look.
+
+* **Which task has the higher priority**?
+Use priorities ("senseless crap"/"normal task"/"critical"/"super-duper critical"/"needed yesterday") you've assigned to them manually.
+Of course, you should better ignore the fact that your "super-duper critical" task could easily be blocked by some "senseless crap".
 
 It becomes unclear when a single issue causes a bottleneck for several features.
 
@@ -137,6 +144,8 @@ https://blog.jbrains.ca/permalink/remind-yourself-to-schedule-x
 
 Порой большая задача выглядит слишком сложной, непонятной, запутанной - но откусывая от неё один маленький кусочек за другим, мы в какой-то момент можем превратить её в простую и подъёмную.
 И если инструмент для управления задачами помогает применять такой подход, это очень круто.
+
+**N.B.**: Certified Monstrosity Manager
 
 ## Aknowledges
 
