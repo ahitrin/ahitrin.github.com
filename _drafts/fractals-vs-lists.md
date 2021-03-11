@@ -113,11 +113,6 @@ Visit all of them and take a look.
 Use priorities ("senseless crap"/"normal task"/"critical"/"super-duper critical"/"needed yesterday") you've assigned to them manually.
 Of course, you should better ignore the fact that your "super-duper critical" task could easily be blocked by some "senseless crap".
   
-Of course, there are little who want to pay such kind of tax.
-We [make many decisions](/work/2020/11/03/a-model-of-small-decisions/) during our everyday work, so after some time you might want to stop placing links and dependencies between tasks.
-Because they "slow you down" and "have little actual sense".
-Then you heroically start a fighting with your linear backlog.
-
 **TODO**: end of work placeholder
 
 ## Respect the structure
