@@ -6,7 +6,6 @@ tags : [fractal trap, SiebenApp]
 ---
 
 As a software developer, have you ever faced such a situation?
-I bet you have.
 
 You start to implement some feature in your project.
 At the beginning, it looks very simple and innocent.
@@ -19,7 +18,7 @@ Suddenly it appears that your simple task has grown in size for **multiple** tim
 Let's explore an imaginary (but quite typical) situation.
 Say you have a "software project": a big pile of code, and some kind of "task tracker" used to plan a work upon this code.
 At the beginning of a new week you choose a single "task" from this tracker and start to work on it.
-This task has already been estimated and split into a simple, straightforward-looking checklist.
+This task has already been "estimated" and split into a simple, straightforward-looking checklist.
 
 ![An original task](/images/fractals-vs-lists/1.png)
 
@@ -114,11 +113,12 @@ Visit all of them and take a look.
 Use priorities ("senseless crap"/"normal task"/"critical"/"super-duper critical"/"needed yesterday") you've assigned to them manually.
 Of course, you should better ignore the fact that your "super-duper critical" task could easily be blocked by some "senseless crap".
   
-**TODO**: end here
+Of course, there are little who want to pay such kind of tax.
+We [make many decisions](/work/2020/11/03/a-model-of-small-decisions/) during our everyday work, so after some time you might want to stop placing links and dependencies between tasks.
+Because they "slow you down" and "have little actual sense".
+Then you heroically start a fighting with your linear backlog.
 
-It becomes unclear when a single issue causes a bottleneck for several features.
-
-**NB**: Trunk-based development
+**TODO**: end of work placeholder
 
 ## Respect the structure
 
