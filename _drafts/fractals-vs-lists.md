@@ -122,6 +122,11 @@ Because most tools are task-oriented, and relations between these tasks are seco
 How can you spot the fractal structure and efficiently work with it when the only thing you get is a big pile of tickets?
 Therefore, we should take a try to visualise this tree (tree structure is also a fractal) and make our dependencies a first-class citizens.
 
+I've been using such way for the last several years, and it works pretty well.
+I've even created [a special tool](https://github.com/ahitrin/SiebenApp) for it.
+
+---
+
 Я попробовал использовать древовидный подход - посмотрите на Sieben.
 
 Предупреждение: forever alpha, пет-проджект, очень неторопливое развитие.
@@ -143,6 +148,8 @@ https://blog.jbrains.ca/permalink/remind-yourself-to-schedule-x
 И если инструмент для управления задачами помогает применять такой подход, это очень круто.
 
 **N.B.**: Certified Monstrosity Manager
+
+---
 
 ## Aknowledges
 
