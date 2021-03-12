@@ -111,16 +111,16 @@ Visit all of them and take a look.
 
 * **Which task has the higher priority**?
 Use priorities ("senseless crap"/"normal task"/"critical"/"super-duper critical"/"needed yesterday") you've assigned to them manually.
-Of course, you should better ignore the fact that your "super-duper critical" task could easily be blocked by some "senseless crap".
-  
-**TODO**: end of work placeholder
+Of course, you should better ignore the fact that your "super-duper critical" task could easily be blocked by another task that in isolation looks like a "senseless crap".
+
+Is it possible to reduce this tax?
+Let me introduce a _possible_ way to do it.
 
 ## Respect the structure
 
 Because most tools are task-oriented, and relations between these tasks are second-class citizens.
-How can you spot the fractal structure when the only thing you get is a big pile of tickets?
-
-## New approach?
+How can you spot the fractal structure and efficiently work with it when the only thing you get is a big pile of tickets?
+Therefore, we should take a try to visualise this tree (tree structure is also a fractal) and make our dependencies a first-class citizens.
 
 Я попробовал использовать древовидный подход - посмотрите на Sieben.
 
