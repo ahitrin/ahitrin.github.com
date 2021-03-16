@@ -122,19 +122,30 @@ Because most tools are task-oriented, and relations between these tasks are seco
 How can you spot the fractal structure and efficiently work with it when the only thing you get is a big pile of tickets?
 Therefore, we should take a try to visualise this tree (tree structure is also a fractal) and make our dependencies a first-class citizens.
 
-I've been using such way for the last several years, and it works pretty well.
-I've even created [a special tool](https://github.com/ahitrin/SiebenApp) for it.
+How a task workflow could look like in such a tool?
+
+At the beginning of a new week you choose a single "task" from this tracker and start to work on it.
+This task has already been <strike>estimated</strike> "pre-planned" and split into <strike>a simple, straightforward-looking checklist</strike> three subtasks.
+
+(image: original task - 1,2,3)
+
+As it already has subtasks so you choose to focus on the first one.
+
+(image: only preliminate refactoring)
+
+At the first glance, this step appears to be simple, but when you dig into, it suddenly grows in size.
+You reflect these changes in your tracker.
+
+(image: preliminate: 1, 2)
 
 ---
-
-Сделать посыл по принципу "как можно было бы работать над задачей":
 
 * Добавляем подтаски на лету
 * Быстро прокидываем зависимости
 * Используем "проекции" для определения текущих подзадач и *фокусируемся* на них
 * Отлично сочетается с trunk-based-development
 * Управление задачами должно больше походить на mind mapping, чем на gantt
-* Задачи и куски должны быть видны вейс команде
+* Задачи и куски должны быть видны всей команде
 * Разбиение задачи на куски - тривиальная операция, которая делается часто
 * Становится гораздо проще управляться со всякими TODO.
 Не нужно раскидывать их в коде или где-то ещё.
@@ -168,7 +179,7 @@ https://blog.jbrains.ca/permalink/remind-yourself-to-schedule-x
 
 Если трекаем не только задачи, но ещё добавляем подцели и связи между ними, количество объектов может быстро выйти из-под контроля.
 Чтобы этого не происходило, **инструмент** должен предоставлять богатые возможности для _task herding_.
-Иначе пипец
+Тогда по факту задач в зоне внимания будет даже меньше, чем если мы работаем со списком.
 
 ---
 
