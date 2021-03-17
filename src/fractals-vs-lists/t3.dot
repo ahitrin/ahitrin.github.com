@@ -1,0 +1,17 @@
+digraph g {
+node [shape=box];
+edge [color=black];
+
+others [label="Some bigger project goal"];
+0 [label="An original task"];
+2 [label="Preliminate refactoring
+(&quot;make a change easy&quot;)", color=orange];
+2_1 [label="Migrate config files
+to the new format", color=red];
+2_2 [label="Extract some code
+into new module", color=red];
+0 -> others;
+2 -> 0;
+2_1 -> 2;
+2_2 -> 2;
+}

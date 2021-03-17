@@ -1,0 +1,48 @@
+digraph g {
+node [shape=box];
+edge [color=black];
+
+others [label="Some bigger project goal"];
+0 [label="An original task", color=orange];
+
+2 [label="Preliminate refactoring
+(&quot;make a change easy&quot;)"];
+3 [label="Implement the feature itself
+(&quot;make an easy change&quot;)"];
+4 [label="Few postponed cleanups"];
+
+5 [label="Migrate config files
+to the new format"];
+
+6 [label="Extract some code
+into new module"];
+
+7 [label="Find and wrap all
+places where old config
+format is used"];
+
+8 [label="Break unexpected
+circular references in code"];
+
+9 [label="Add few tests on
+legacy code"];
+
+0 -> others;
+
+2 -> 0;
+3 -> 0;
+4 -> 0;
+
+2 -> 3 [style=dotted];
+3 -> 4 [style=dotted];
+
+5 -> 2;
+6 -> 2;
+
+7 -> 5;
+8 -> 6;
+
+9 -> 0;
+9 -> 7 [style=dotted];
+9 -> 8 [style=dotted];
+}

@@ -127,22 +127,36 @@ How a task workflow could look like in such a tool?
 At the beginning of a new week you choose a single "task" from this tracker and start to work on it.
 This task has already been <strike>estimated</strike> "pre-planned" and split into <strike>a simple, straightforward-looking checklist</strike> three subtasks.
 
-(image: original task - 1,2,3)
+![an original task as tree](/images/fractals-vs-lists/t1.png)
 
-As it already has subtasks so you choose to focus on the first one.
+As it already has subtasks so you choose to start from the first one.
+To improve your _focus_, you _hide_ other subtasks - they are not needed at the moment.
 
-(image: only preliminate refactoring)
+![focus on the first subtask](/images/fractals-vs-lists/t2.png)
 
 At the first glance, this step appears to be simple, but when you dig into, it suddenly grows in size.
 You reflect these changes in your tracker.
 
-(image: preliminate: 1, 2)
+![new nested subtasks appear](/images/fractals-vs-lists/t3.png)
+
+A number of subtasks still grow, but now you're prepared for that.
+No matter how deep you dig into, you could always control the complexity of your current context.
+Split you tasks into parts, focus on a single chosen part and hide others.
+Place blocking relations between subtasks when you see that they need to be executed in an order.
+Remove relations when you see that they do not depend on each other.
+Group similar subtasks together.
+And so on...
+
+From time to time you switch from "working mode" into "planning mode".
+Instead of "zooming in" into subtasks, you "zoom out" to see a whole picture.
+It may looks like that, for example:
+
+![the whole view](/images/fractals-vs-lists/t4.png)
+
+Does it look scary?
+This is quite possible when you're unfamiliar with such kind of task management.
 
 ---
-
-* Добавляем подтаски на лету
-* Быстро прокидываем зависимости
-* Используем "проекции" для определения текущих подзадач и *фокусируемся* на них
 * Отлично сочетается с trunk-based-development
 * Управление задачами должно больше походить на mind mapping, чем на gantt
 * Задачи и куски должны быть видны всей команде
