@@ -159,10 +159,31 @@ At the first glance things seem worse: now you do not only have more subtasks to
 A total amount of "items" has been increased comparing to previous approaches.
 
 But when you look how does it behave _in dynamics_, things do change.
+In that mode, you don't work on any task.
+Instead, you look on relations between them and reorganize them when needed.
+It's very similar to the mind mapping technique, when you organize connections between your ideas.
+You decide what is relatively more important, and what is relatively less important.
+An every line in this graph becomes _the record of your decision_.
+You don't need to keep these decisions in your mind after returning to the "close view" mode.
+
+Back to our example, let's imagine that you decide that one of your refactoring could be performed later since it doesn't actually block your work.
+(This happens to me sometimes: when I dig into the code, the initial intent may be like "cleanup everything!"; but then I cool down and make a more pragmatic look, finding that some of refactorings could easily be postponed.)
+To reflect your decision, you move one of your refactoring subtasks into the "Few postponed cleanups" group.
+
+![subtask moved](/images/fractals-vs-lists/t5.png)
+
+Then you've zoomed into the "Preliminate refactoring" again.
+It's become simpler than before because the "Migrate config files" subtask doesn't block it anymore.
+
+![zoomed back to refactoring](/images/fractals-vs-lists/t6.png)
+
+Simply take the "top" subtask (having no blockers or nested subtasks) and solve it.
+This allows new tasks to become "top" ones.
+This process strictly follows the order you've defined earlier.
+Now your task tracker works not like mind mapping, but like a todo list!
 
 ---
 * Отлично сочетается с trunk-based-development
-* Управление задачами должно больше походить на mind mapping, чем на gantt
 * Задачи и куски должны быть видны всей команде
 * Разбиение задачи на куски - тривиальная операция, которая делается часто
 * Становится гораздо проще управляться со всякими TODO.
