@@ -155,6 +155,10 @@ It may looks like that, for example:
 
 Does it look scary?
 This is quite possible when you're unfamiliar with such kind of task management.
+At the first glance things seem worse: now you do not only have more subtasks to manage, but also many explicit dependencies between then.
+A total amount of "items" has been increased comparing to previous approaches.
+
+But when you look how does it behave _in dynamics_, things do change.
 
 ---
 * Отлично сочетается с trunk-based-development
@@ -201,10 +205,10 @@ https://blog.jbrains.ca/permalink/remind-yourself-to-schedule-x
 
 This article wouldn't appear without influence of following people:
 
-1. [Jessica Kerr](https://twitter.com/jessitron) in her ["Code is a coastline"](https://jessitron.com/2020/09/19/code-is-a-coastline/) have inspired me to write own thoughts about fractal nature of software tasks.
+1. [Jessica Kerr](https://twitter.com/jessitron) in her ["Code is a coastline"](https://jessitron.com/2020/09/19/code-is-a-coastline/) have inspired me to write my own thoughts about fractal nature of software tasks.
 2. [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund) with their ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book have changed my way of thinkning about tasks.
 After several years of practicing I find it way more natural, easy and practical than the classical big-ticket-oriented approach.
-3. [Sergey Tslovalnikov](https://twitter.com/SerCeMan), my Russian ex-coleague, gave me much ehough courage to write in English.
+3. [Sergey Tselovalnikov](https://twitter.com/SerCeMan), my Russian ex-coleague, gave me much ehough courage to write in English.
 Check out his [blog](https://serce.me/archives/).
 
 ## Comments
