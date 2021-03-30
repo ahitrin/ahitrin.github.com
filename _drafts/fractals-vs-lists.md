@@ -220,6 +220,10 @@ https://blog.jbrains.ca/permalink/remind-yourself-to-schedule-x
 Чтобы этого не происходило, **инструмент** должен предоставлять богатые возможности для _task herding_.
 Тогда по факту задач в зоне внимания будет даже меньше, чем если мы работаем со списком.
 
+
+different Gantt tools:
+https://habr.com/ru/company/macloud/blog/548940/
+
 ---
 
 ## Aknowledges
