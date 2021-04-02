@@ -1,0 +1,10 @@
+digraph g {
+    node [shape=box];
+    yesterday [color=lightgrey];
+    today [color=green];
+    nextDay [label="day after tomorrow"];
+
+    yesterday -> today;
+    today -> tomorrow;
+    tomorrow -> nextDay;
+}

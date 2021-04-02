@@ -87,16 +87,15 @@ Like this:
 ![4 tasks instead of 1](/images/fractals-vs-lists/5.png)
 
 Oh, wait!..
-
-Actually, you'll usually see it like this:
+Much more often you see it like this:
 
 ```
 Ticket      Label                       Assignee
 ----        ----                        ----
-#1          An original task            Fellow developer
-#2          Config migrations           Fellow developer
-#3          Code cleanup                Fellow developer
-#4          Add more tests              Fellow developer
+#321        An original task            Fellow developer
+#322        Config migrations           Fellow developer
+#323        Code cleanup                Fellow developer
+#324        Add more tests              Fellow developer
 ```
 
 With splitting your task into subtasks, you usually have to pay a new tax: a tax of manual dependency management.
@@ -110,21 +109,21 @@ Well, dig into it and check whether there is any "blocker task" on a card.
 Visit all of them and take a look.
 
 * **Which task has the higher priority**?
-Use priorities ("senseless crap"/"normal task"/"critical"/"super-duper critical"/"needed yesterday") you've assigned to them manually.
-Of course, you should better ignore the fact that your "super-duper critical" task could easily be blocked by another task that in isolation looks like a "senseless crap".
+Use priorities you've assigned to them manually.
+Of course, you should better ignore the fact that your "super-duper critical" task could easily be blocked by another task that looks like a "senseless crap" in isolation.
 
 Is it possible to reduce this tax?
 Let me introduce a _possible_ way to do it.
 
 ## Respect the structure
 
-Because most tools are task-oriented, and relations between these tasks are second-class citizens.
+Because of the task-oriented nature of the most task-tracking tools, the relations between these tasks are second-class citizens.
 How can you spot the fractal structure and efficiently work with it when the only thing you get is a big pile of tickets?
-Therefore, we should take a try to visualise this tree (tree structure is also a fractal) and make our dependencies a first-class citizens.
+Therefore, we should take a try to visualise this tree (tree structure is also a fractal) and introduce our dependencies as first-class citizens.
 
 How a task workflow could look like in such a tool?
 
-At the beginning of a new week you choose a single "task" from this tracker and start to work on it.
+At the beginning of a new day you choose a single "task" from this tracker and start to work on it.
 This task has already been <strike>estimated</strike> "pre-planned" and split into <strike>a simple, straightforward-looking checklist</strike> three subtasks.
 
 ![an original task as tree](/images/fractals-vs-lists/t1.png)
@@ -134,18 +133,19 @@ To improve your _focus_, you _hide_ other subtasks - they are not needed at the 
 
 ![focus on the first subtask](/images/fractals-vs-lists/t2.png)
 
-At the first glance, this step appears to be simple, but when you dig into, it suddenly grows in size.
-You reflect these changes in your tracker.
+At the first glance, this step appears to be simple, but when you dig into, it <strike>suddenly</strike> expectedly grows in size.
+You reflect these changes in your tracker by adding new subtasks.
+In your task tracker, it's a quick and easy operation.
 
 ![new nested subtasks appear](/images/fractals-vs-lists/t3.png)
 
-A number of subtasks still grow, but now you're prepared for that.
-No matter how deep you dig into, you could always control the complexity of your current context.
+A number of subtasks still grow, but you're prepared for that.
+No matter how deep you dig into, you could always control the complexity of your current working context.
 Split you tasks into parts, focus on a single chosen part and hide others.
 Place blocking relations between subtasks when you see that they need to be executed in an order.
 Remove relations when you see that they do not depend on each other.
 Group similar subtasks together.
-And so on...
+All these operations allow you to keep the number of your next actions small.
 
 From time to time you switch from "working mode" into "planning mode".
 Instead of "zooming in" into subtasks, you "zoom out" to see a whole picture.
@@ -159,15 +159,15 @@ At the first glance things seem worse: now you do not only have more subtasks to
 A total amount of "items" has been increased comparing to previous approaches.
 
 But when you look how does it behave _in dynamics_, things do change.
-In that mode, you don't work on any task.
+In that mode, you don't work on any single task.
 Instead, you look on relations between them and reorganize them when needed.
 It's very similar to the mind mapping technique, when you organize connections between your ideas.
-You decide what is relatively more important, and what is relatively less important.
+You decide what is _relatively more_ important, and what is _relatively less_ important.
 An every line in this graph becomes _the record of your decision_.
 You don't need to keep these decisions in your mind after returning to the "close view" mode.
 
 Back to our example, let's imagine that you decide that one of your refactoring could be performed later since it doesn't actually block your work.
-(This happens to me sometimes: when I dig into the code, the initial intent may be like "cleanup everything!"; but then I cool down and make a more pragmatic look, finding that some of refactorings could easily be postponed.)
+(This happens to me regularly: when I dig into the code, the initial intent may be like "cleanup everything!"; but then I cool down and make a more pragmatic look, finding that some of refactorings could easily be postponed.)
 To reflect your decision, you move one of your refactoring subtasks into the "Few postponed cleanups" group.
 
 ![subtask moved](/images/fractals-vs-lists/t5.png)
@@ -180,18 +180,37 @@ It's become simpler than before because the "Migrate config files" subtask doesn
 Simply take the "top" subtask (having no blockers or nested subtasks) and solve it.
 This allows new tasks to become "top" ones.
 This process strictly follows the order you've defined earlier.
-Now your task tracker works not like mind mapping, but like a todo list!
+Now your task tracker works not like mind mapping, but like a todo list.
+But it's still the same tool!
+
+It's interesting that most of task organisation practices we use could easily be implemented using "everything is a graph" scenario:
+
+1. **Project/Epic/Task/Subtask/Checklist/Checklist item**?
+   Well, you may have as many nested levels as you wish.
+   And they all could be managed the same way.
+   You don't need to use any _special button_ to transform your _Checklist_ into a _Task_.
+   Simply move it onto a new root.
+
+2. **Tags/categories**?
+   You could create them in a sibling project subtree and provide links between tags and tasks.
+
+3. **Assignee**?
+   The same picture: people usually form groups and formal hierarchies.
+
+4. **Time**?
+   Yes, even time could be represented as a <strike>fractal</strike> tree.
+   Because time is linear, and line is a special case of a tree.
+   The only difference is that "time tasks" could not be blocked by non-time tasks and close by themselves.
+
+![time sequence is also a simple tree](/images/fractals-vs-lists/time.png)
+
+## Does it have drawbacks?
+
+Of course, there are several.
+
+1. Obviously, tree shaving takes time.
 
 ---
-* Отлично сочетается с trunk-based-development
-* Задачи и куски должны быть видны всей команде
-* Разбиение задачи на куски - тривиальная операция, которая делается часто
-* Становится гораздо проще управляться со всякими TODO.
-Не нужно раскидывать их в коде или где-то ещё.
-Делаем подзадачу "do later" и фигачим идеи туда.
-Потом, когда сделаем текучку, можно к ним вернуться
-* Как результат, работать легче и приятнее
-
 Но есть и минусы
 
 1. Требуется дисциплина и умение.
@@ -201,8 +220,13 @@ Now your task tracker works not like mind mapping, but like a todo list!
 2. Такой детальный менеджмент требует определённого времени.
 Элементов стало больше, причём существенно.
 
-3. Нет по-настоящему подходящих инструментов.
+3. Потеря понятности, дублирование задач
+
+4. Нет по-настоящему подходящих инструментов.
 Известные мне примеры не дотягивают.
+I've looked at tens (or even maybe hundreds) tools, and none of them is close enough.
+different Gantt tools:
+https://opensource.com/article/21/3/open-source-project-management
 
 Я надеюсь, что со временем всё же появятся подобные практики и инструменты, приносящие пользу всем нам.
 
@@ -211,18 +235,12 @@ Now your task tracker works not like mind mapping, but like a todo list!
 
 https://blog.jbrains.ca/permalink/remind-yourself-to-schedule-x
 
-Порой большая задача выглядит слишком сложной, непонятной, запутанной - но откусывая от неё один маленький кусочек за другим, мы в какой-то момент можем превратить её в простую и подъёмную.
-И если инструмент для управления задачами помогает применять такой подход, это очень круто.
-
 **N.B.**: Certified Monstrosity Manager
 
 Если трекаем не только задачи, но ещё добавляем подцели и связи между ними, количество объектов может быстро выйти из-под контроля.
 Чтобы этого не происходило, **инструмент** должен предоставлять богатые возможности для _task herding_.
 Тогда по факту задач в зоне внимания будет даже меньше, чем если мы работаем со списком.
 
-
-different Gantt tools:
-https://habr.com/ru/company/macloud/blog/548940/
 
 ---
 
@@ -231,9 +249,11 @@ https://habr.com/ru/company/macloud/blog/548940/
 This article wouldn't appear without influence of following people:
 
 1. [Jessica Kerr](https://twitter.com/jessitron) in her ["Code is a coastline"](https://jessitron.com/2020/09/19/code-is-a-coastline/) have inspired me to write my own thoughts about fractal nature of software tasks.
+It's only my fault that it took several month to formulate the answer!
 2. [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund) with their ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book have changed my way of thinkning about tasks.
 After several years of practicing I find it way more natural, easy and practical than the classical big-ticket-oriented approach.
-3. [Sergey Tselovalnikov](https://twitter.com/SerCeMan), my Russian ex-coleague, gave me much ehough courage to write in English.
+3. [Sergey Tselovalnikov](https://twitter.com/SerCeMan), my Russian ex-coleague, gave me much ehough courage to start writing in English.
+He's also my informal HN promoter, but it's a secret!
 Check out his [blog](https://serce.me/archives/).
 
 ## Comments
