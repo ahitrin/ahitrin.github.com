@@ -208,7 +208,7 @@ It's interesting that most of task organisation practices we use could easily be
 
 Of course, there are several.
 
-1. Obviously, tree shaving takes time.
+1. Obviously, tree trimming takes time.
 
 ---
 Но есть и минусы
