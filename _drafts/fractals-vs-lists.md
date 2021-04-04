@@ -200,7 +200,7 @@ It's interesting that most of task organisation practices we use could easily be
 4. **Time**?
    Yes, even time could be represented as a <strike>fractal</strike> tree.
    Because time is linear, and line is a special case of a tree.
-   The only difference is that "time tasks" could not be blocked by non-time tasks and close by themselves.
+   With only few differences: "time tasks" get added and closed by themselves; they have a separate root named "far future".
 
 ![time sequence is also a simple tree](/images/fractals-vs-lists/time.png)
 
@@ -208,7 +208,15 @@ It's interesting that most of task organisation practices we use could easily be
 
 Of course, there are several.
 
-1. Obviously, tree trimming takes time.
+**Tree trimming takes time**.
+
+**It requires skill**.
+
+**Context loss**.
+
+**Risk of goal duplication**.
+
+**No good tools**.
 
 ---
 Но есть и минусы
