@@ -121,6 +121,10 @@ Because of the task-oriented nature of the most task-tracking tools, the relatio
 How can you spot the fractal structure and efficiently work with it when the only thing you get is a big pile of tickets?
 Therefore, we should take a try to visualise this tree (tree structure is also a fractal) and introduce our dependencies as first-class citizens.
 
+Let me say right from the start: this post is not about any kind of "Gantt tool".
+Yes, they provide some kind of dependency structure, but they're focused on very different things (duration, "resources", "materials", large scope) and provide very heavyweight workflow.
+Here, I want to introduce the concept of lightweight planner that programmer may use in everyday work.
+
 How a task workflow could look like in such a tool?
 
 At the beginning of a new day you choose a single "task" from this tracker and start to work on it.
@@ -237,15 +241,18 @@ In other hand, this could happen to any task tracker, rigth?
 All of these issues could be mitigated with a good tool.
 But not the last one!
 
-**There are no good tools**.
+**There are no such tools**.
 At least, among well known ones.
 I've looked at tens (or even maybe hundreds) tools, and none of them is close enough to the described functionality.
+I've even had to [create one](https://github.com/ahitrin/SiebenApp) by myself.
+It allows to understand consepts described here, but still lacks a lot of important features.
+But whether you only need to evaluate ideas I've described here, it may help you.
+
+## Conclusions
+
+I sincerely hope that after some time we could have mature and flexible tree-based task trackers.
 
 ---
-Известные мне примеры не дотягивают.
-different Gantt tools:
-https://opensource.com/article/21/3/open-source-project-management
-
 Я надеюсь, что со временем всё же появятся подобные практики и инструменты, приносящие пользу всем нам.
 
 Замечу лишь, что мой опыт работы с Sieben дал один очень важный урок.
@@ -268,6 +275,12 @@ After several years of practicing I find it way more natural, easy and practical
 3. [Sergey Tselovalnikov](https://twitter.com/SerCeMan), my Russian ex-coleague, gave me much ehough courage to start writing in English.
 He's also my informal HN promoter, but it's a secret!
 Check out his [blog](https://serce.me/archives/).
+
+## Additional links
+
+In case you want to take a look at the herd of task trackers, take a look
+[here](https://opensource.com/article/21/3/open-source-project-management)
+or [there](https://opensource.com/article/18/2/agile-project-management-tools).
 
 ## Comments
 
