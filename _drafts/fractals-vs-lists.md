@@ -206,31 +206,34 @@ It's interesting that most of task organisation practices we use could easily be
 
 ## Does it have drawbacks?
 
-Of course, there are several.
+Of course, there are several issues.
 
 **Tree trimming takes time**.
+Almost obviuosly, when you manage many small subpieces of your task and relations between them, it requires larger part of your time.
+On the flip side, detailed and flexible planning often allows to foresee and avoid traps before failing into them.
+And saves the time you might lose when escaping from these traps.
 
 **It requires skill**.
+Less obvious but more important point.
+Without experience in decomposition, you often don't know how to split your tasks properly.
+But to gain experience, you need to do it on the regular basis.
+Even after ~5 years of using my tool I still find new ideas to improve my techniques.
 
-**Context loss**.
+**Risk of context loss**.
+This happens regularly.
+Say you have two big subtasks of your current task (`A` and `B`).
+Each one has few nested subgoals (`A.1`, `A.2`, `A.3`, `B.1`, `B.2`, and so on).
+While working on subtask `A` you notice that `A.2` is a prerequisite for `B.1` and place a dependency between them.
+After some time you switch from `A` to `B` and `A.2` (a blocker for `B.1`) suddenly becomes unclear for you.
+Because it's described in few simple words like "Do X" which are clear in the context of `A` but not in the context of `B`.
+
+**Observability issues**.
 
 **Risk of goal duplication**.
 
 **No good tools**.
 
 ---
-Но есть и минусы
-
-1. Требуется дисциплина и умение.
-Они частично вырабатываются в процессе, но я до сих пор на некоторых задачах думаю "обойдусь-ка решением по старинке, а то непонятно, как это дело разложить, или просто лень".
-Потом часто жалею, впрочем.
-
-2. Такой детальный менеджмент требует определённого времени.
-Элементов стало больше, причём существенно.
-
-3. Потеря понятности, дублирование задач
-
-4. Нет по-настоящему подходящих инструментов.
 Известные мне примеры не дотягивают.
 I've looked at tens (or even maybe hundreds) tools, and none of them is close enough.
 different Gantt tools:
@@ -244,11 +247,6 @@ https://opensource.com/article/21/3/open-source-project-management
 https://blog.jbrains.ca/permalink/remind-yourself-to-schedule-x
 
 **N.B.**: Certified Monstrosity Manager
-
-Если трекаем не только задачи, но ещё добавляем подцели и связи между ними, количество объектов может быстро выйти из-под контроля.
-Чтобы этого не происходило, **инструмент** должен предоставлять богатые возможности для _task herding_.
-Тогда по факту задач в зоне внимания будет даже меньше, чем если мы работаем со списком.
-
 
 ---
 
