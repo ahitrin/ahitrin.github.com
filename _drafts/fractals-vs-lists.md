@@ -228,14 +228,21 @@ After some time you switch from `A` to `B` and `A.2` (a blocker for `B.1`) sudde
 Because it's described in few simple words like "Do X" which are clear in the context of `A` but not in the context of `B`.
 
 **Observability issues**.
+Also pretty obvious: when you have **a lot** of small subtasks, at some moment they become difficult to find.
 
-**Risk of goal duplication**.
+**Risk of task duplication**.
+As a consequence of two previous issues, there are duplicated subtasks that appear on a regular basis.
+In other hand, this could happen to any task tracker, rigth?
 
-**No good tools**.
+All of these issues could be mitigated with a good tool.
+But not the last one!
+
+**There are no good tools**.
+At least, among well known ones.
+I've looked at tens (or even maybe hundreds) tools, and none of them is close enough to the described functionality.
 
 ---
 Известные мне примеры не дотягивают.
-I've looked at tens (or even maybe hundreds) tools, and none of them is close enough.
 different Gantt tools:
 https://opensource.com/article/21/3/open-source-project-management
 
