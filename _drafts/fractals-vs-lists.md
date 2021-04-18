@@ -224,12 +224,14 @@ But to gain experience, you need to do it on the regular basis.
 Even after ~5 years of using my tool I still find new ideas to improve my techniques.
 
 **Risk of context loss**.
-This happens regularly.
+Alas, this happens regularly.
 Say you have two big subtasks of your current task (`A` and `B`).
 Each one has few nested subgoals (`A.1`, `A.2`, `A.3`, `B.1`, `B.2`, and so on).
 While working on subtask `A` you notice that `A.2` is a prerequisite for `B.1` and place a dependency between them.
 After some time you switch from `A` to `B` and `A.2` (a blocker for `B.1`) suddenly becomes unclear for you.
 Because it's described in few simple words like "Do X" which are clear in the context of `A` but not in the context of `B`.
+Solution?
+You need to _always_ keep some additional context together with single subtask.
 
 **Observability issues**.
 Also pretty obvious: when you have **a lot** of small subtasks, at some moment they become difficult to find.
@@ -248,7 +250,13 @@ I've even had to [create one](https://github.com/ahitrin/SiebenApp) by myself.
 It allows to understand consepts described here, but still lacks a lot of important features.
 But whether you only need to evaluate ideas I've described here, it may help you.
 
-## Conclusions
+## Final thoughts
+
+At last, we have an answer on the question from the heading.
+
+**Why do we use linear approximations for fractals?** -- Because we don't have good tools for that.
+
+**Why don't we have such tools?** -- Because the most of us is sticked to 
 
 I sincerely hope that after some time we could have mature and flexible tree-based task trackers.
 
