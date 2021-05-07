@@ -187,27 +187,6 @@ This process strictly follows the order you've defined earlier.
 Now your task tracker works not like mind mapping, but like a todo list.
 But it's still the same tool!
 
-It's interesting that most of the task organisation practices we use could easily be implemented using "everything is a graph" scenario:
-
-1. **Project/Epic/Task/Subtask/Checklist/Checklist item**?
-   Well, you may have as many nested levels as you wish.
-   And they all could be managed the same way.
-   You don't need to use any _special button_ to transform your _Checklist_ into a _Task_.
-   Simply move it onto a new root.
-
-2. **Tags/categories**?
-   You could create them in a sibling project subtree and provide links between tags and tasks.
-
-3. **Assignee**?
-   The same picture: people usually form groups and formal hierarchies.
-
-4. **Time**?
-   Yes, even time could be represented as a <strike>fractal</strike> tree.
-   Because time is linear, and a line is a special case of a tree.
-   With only a few differences: "time tasks" get added and closed by themselves; they have a separate root named "far future".
-
-![time sequence is also a simple tree](/images/fractals-vs-lists/time.png)
-
 ## Does it have drawbacks?
 
 Of course, there are several issues.
