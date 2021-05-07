@@ -74,18 +74,11 @@ _Something_ is happening in the task, and it will be finished _someday_.
 
 Depending on your working environment and team agreements, this situation could not significantly harm your performance.
 But in most cases, it does.
+There are thousands of words written that could explain better than me why large tasks decrease your productivity.
 
-Imagine that your project has a strict delivering policy.
-You have to deliver all your code at once, because of a rigid "task lifecycle".
-This means you have to roll it out only after completing the last substep.
-How long will your feedback cycle become?
-How many code conflicts will you have to resolve during the merge?
+**NOTE**: provide links
 
-Also, you should mind the cognitive load!
-The bigger your task is, the more nuances you have to keep in your head.
-Actual and potential consequences of your changes, possible compatibility issues, questions you're unsure about, and so on.
-
-Of course, this is a common problem, and there is a solution already! 
+Of course, this is a common problem, and there is a solution already!
 Let's proceed to it.
 
 ## Divide and conquer
