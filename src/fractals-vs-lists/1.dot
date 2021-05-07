@@ -4,7 +4,7 @@ edge [color=black];
 subgraph cluster_0 {
     color=orange;
     label = "An original task";
-2 [label="1: Preliminate refactoring
+2 [label="1: Preliminary refactoring
 (&quot;make a change easy&quot;)", color=red];
 3 [label="2: Implement the feature itself
 (&quot;make an easy change&quot;)", color=red];

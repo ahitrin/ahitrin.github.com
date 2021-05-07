@@ -5,7 +5,7 @@ edge [color=black];
 others [label="Some bigger project goal"];
 0 [label="An original task"];
 
-2 [label="Preliminate refactoring
+2 [label="Preliminary refactoring
 (&quot;make a change easy&quot;)", color=orange];
 
 6 [label="Extract some code

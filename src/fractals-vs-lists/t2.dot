@@ -4,7 +4,7 @@ edge [color=black];
 
 others [label="Some bigger project goal"];
 0 [label="An original task"];
-2 [label="Preliminate refactoring
+2 [label="Preliminary refactoring
 (&quot;make a change easy&quot;)", color=orange];
 0 -> others [label="subtask"];
 2 -> 0 [label="subtask"];

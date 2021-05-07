@@ -6,7 +6,7 @@ subgraph cluster_0 {
     label = "An original task (has grown 2x in size)";
     subgraph cluster_1 {
         color = green;
-        label="1: Preliminate refactoring
+        label="1: Preliminary refactoring
 (&quot;make a change easy&quot;)";
 
         subgraph cluster_2 {

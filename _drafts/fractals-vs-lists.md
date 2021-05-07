@@ -38,7 +38,7 @@ Much bad, need to fix it!
 ![We're in the fractal trap!](/images/fractals-vs-lists/4.png)
 
 Of course, this isn't a rant against refactoring or tests!
-They are truly needed, especially in complex and aged codebases.
+They are truly needed, especially in complex and aged code bases.
 I rant against the way we've used to deal with tasks.
 
 ![Sierpinski triangle](/images/fractals-vs-lists/Sierpinski_triangle.svg)
@@ -58,14 +58,14 @@ But how do we usually deal with such a kind of problem?
 
 The most naive approach to handle this problem is a simple ignorance.
 Is each task growing in size?
-Ok, let's deal with it.
+OK, let's deal with it.
 Just keep going until the final goal is achieved.
 
 Alas, by keeping all substeps in the same task we make them quite opaque.
 _Something_ is happening in the task, and it will be finished _someday_.
 
 Whether it's fine or not strongly depends on your working environment and team agreements.
-For example, let's imagine that your project has a strict delivering policy.
+Say, imagine that your project has a strict delivering policy.
 You have to deliver all your code at once, because of a rigid "task lifecycle".
 This means you have to roll it out only after completing the last substep.
 How long will your feedback cycle become?
@@ -119,7 +119,7 @@ Let me introduce a _possible_ way to do it.
 
 Because of the task-oriented nature of most task-tracking tools, the relations between these tasks are second-class citizens.
 How can you spot the fractal structure and efficiently work with it when the only thing you get is a big pile of tickets?
-Therefore, we should try to visualise this tree (tree structure is also a fractal) and introduce our dependencies as first-class citizens.
+Therefore, we should try to visualize this tree (tree structure is also a fractal) and introduce our dependencies as first-class citizens.
 
 Let me say right from the start: this post is not about any kind of "Gantt tool".
 Yes, they provide some kind of dependency structure, but they're focused on very different things (duration, "resources", "materials", large scope) and provide a very heavyweight workflow.
@@ -137,7 +137,7 @@ To improve your _focus_, you _hide_ other subtasks - they are not needed at the 
 
 ![focus on the first subtask](/images/fractals-vs-lists/t2.png)
 
-At first glance, this step appears to be simple, but when you dig into it, it <strike>suddenly</strike> expectedly grows in size.
+At first glance, this step appears to be simple, but when you dig into it, it <strike>suddenly</strike> grows in size.
 You reflect these changes in your tracker by adding new subtasks.
 In your task tracker, it's a quick and easy operation.
 
@@ -176,7 +176,7 @@ To reflect your decision, you move one of your refactoring subtasks into the "Fe
 
 ![subtask moved](/images/fractals-vs-lists/t5.png)
 
-Then you've zoomed into the "Preliminate refactoring" again.
+Then you've zoomed into the "Preliminary refactoring" again.
 It's become simpler than before because the "Migrate config files" subtask doesn't block it anymore.
 
 ![zoomed back to refactoring](/images/fractals-vs-lists/t6.png)
@@ -224,9 +224,8 @@ On the other hand, this could happen to any task tracker, right?
 All of these issues could be mitigated with a good tool.
 But not the last one!
 
-**There are no such tools**.
-At least, among well known ones.
-I've looked at tens (or even maybe hundreds) tools, and none of them is close enough to the described functionality.
+**Lack of tools**.
+I've looked at tens of the most popular task management tools, and none of them is close enough to the described functionality.
 I've even had to [create one](https://github.com/ahitrin/SiebenApp) by myself.
 It allows for understanding the concepts described here but still lacks a lot of important features.
 But if you only need to evaluate the ideas I've described here, it may help you.
@@ -240,18 +239,6 @@ At last, we have the answer to the question from the heading.
 **Why don't we have such tools?** -- Because the most of us is sticked to 
 
 I sincerely hope that after some time we could have mature and flexible tree-based task trackers.
-
----
-Я надеюсь, что со временем всё же появятся подобные практики и инструменты, приносящие пользу всем нам.
-
-Замечу лишь, что мой опыт работы с Sieben дал один очень важный урок.
-Практически у любой задачи можно выделить маленькую и более простую подзадачу, решение которой будет приближать вас к цели.
-
-https://blog.jbrains.ca/permalink/remind-yourself-to-schedule-x
-
-**N.B.**: Certified Monstrosity Manager
-
----
 
 ## Aknowledges
 
