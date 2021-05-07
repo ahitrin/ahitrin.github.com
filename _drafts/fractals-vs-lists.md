@@ -184,7 +184,7 @@ It's become simpler than before because the "Migrate config files" subtask doesn
 Simply take the "top" subtask (having no blockers or nested subtasks) and solve it.
 This allows new tasks to become "top" ones.
 This process strictly follows the order you've defined earlier.
-Now your task tracker works not like mind mapping, but like a todo list.
+Now your task tracker works not like mind mapping, but like a TODO-list.
 But it's still the same tool!
 
 ## Does it have drawbacks?
@@ -192,7 +192,7 @@ But it's still the same tool!
 Of course, there are several issues.
 
 **Tree trimming takes time**.
-Almost obviuosly, when you manage many small subpieces of your task and relations between them, it requires larger part of your time.
+Almost obviously, when you manage many small pieces of your task and relations between them, it requires larger part of your time.
 On the flip side, detailed and flexible planning often allows one to foresee and avoid traps before falling into them.
 
 And it saves the time you might lose when escaping from these traps.
@@ -236,19 +236,19 @@ At last, we have the answer to the question from the heading.
 
 **Why do we use linear approximations for fractals?** -- Because we don't have good tools for that.
 
-**Why don't we have such tools?** -- Because the most of us is sticked to 
+**Why don't we have such tools?** -- Because the most of us is stuck to 
 
 I sincerely hope that after some time we could have mature and flexible tree-based task trackers.
 
-## Aknowledges
+## Acknowledges
 
 This article wouldn't appear without influence of following people:
 
 1. [Jessica Kerr](https://twitter.com/jessitron) in her ["Code is a coastline"](https://jessitron.com/2020/09/19/code-is-a-coastline/) have inspired me to write my own thoughts about fractal nature of software tasks.
 It's only my fault that it took several month to formulate the answer!
-2. [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund) with their ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book have changed my way of thinkning about tasks.
+2. [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund) with their ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book have changed my way of thinking about tasks.
 After several years of practicing I find it way more natural, easy and practical than the classical big-ticket-oriented approach.
-3. [Sergey Tselovalnikov](https://twitter.com/SerCeMan), my Russian ex-coleague, gave me much ehough courage to start writing in English.
+3. [Sergey Tselovalnikov](https://twitter.com/SerCeMan), my Russian ex-colleague, gave me much enough courage to start writing in English.
 He's also my informal HN promoter, but it's a secret!
 Check out his [blog](https://serce.me/archives/).
 
