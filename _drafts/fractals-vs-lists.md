@@ -5,6 +5,8 @@ title: Why do we use linear approximations for fractals?
 tags : [fractal trap, SiebenApp]
 ---
 
+**REDO**
+
 As a software developer, have you ever faced such a situation?
 
 You start to implement some feature in your project.
@@ -13,10 +15,16 @@ Soon, as you get in, few obstacles appear.
 You try to overcome them - and find new and new ones!
 Suddenly it appears that your simple task has grown in size for **multiple** times.
 
+**END REDO**
+
 ## Welcome to the _fractal trap_!
 
 Let's explore an imaginary (but quite typical) situation.
-Say you have a "software project": a big pile of code, and some kind of "task tracker" used to plan a work upon this code.
+Say you have a "software project":
+
+* a big pile of code,
+* and some kind of "task tracker" used to plan a work upon this code.
+
 At the beginning of a new week you choose a single "task" from this tracker and start to work on it.
 This task has already been "estimated" and split into a simple, straightforward-looking checklist.
 
@@ -64,8 +72,10 @@ Just keep going until the final goal is achieved.
 Alas, by keeping all substeps in the same task we make them quite opaque.
 _Something_ is happening in the task, and it will be finished _someday_.
 
-Whether it's fine or not strongly depends on your working environment and team agreements.
-Say, imagine that your project has a strict delivering policy.
+Depending on your working environment and team agreements, this situation could not significantly harm your performance.
+But in most cases, it does.
+
+Imagine that your project has a strict delivering policy.
 You have to deliver all your code at once, because of a rigid "task lifecycle".
 This means you have to roll it out only after completing the last substep.
 How long will your feedback cycle become?
