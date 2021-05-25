@@ -5,17 +5,7 @@ title: Why do we use linear approximations for fractals?
 tags : [fractal trap, SiebenApp]
 ---
 
-**REDO**
-
-As a software developer, have you ever faced such a situation?
-
-You start to implement some feature in your project.
-At the beginning, it looks very simple and innocent.
-Soon, as you get in, few obstacles appear.
-You try to overcome them - and find new and new ones!
-Suddenly it appears that your simple task has grown in size for **multiple** times.
-
-**END REDO**
+**TODO**: Add intro
 
 ## Welcome to the _fractal trap_!
 
