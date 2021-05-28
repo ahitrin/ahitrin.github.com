@@ -3,6 +3,7 @@ layout: post
 category : work
 comments : true
 tags : [clojure, vim]
+date: 2013-12-19
 ---
 
 Я давно присматривался к замечательному языку Clojure, но никак не мог начать строить с ним хорошие отношения.

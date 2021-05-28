@@ -2,6 +2,7 @@
 layout: post
 title: "SiebenApp: мой персональный проект"
 tags : [SiebenApp, gtd]
+date: 2018-01-24
 ---
 
 Вот уже больше года я потихоньку развиваю [свой pet project][SiebenApp].

@@ -3,6 +3,7 @@ layout: post
 category : work
 comments : true
 tags : [trello, GTD, checklist]
+date: 2013-07-09
 ---
 
 ![pic](/images/trello-checklist.png)

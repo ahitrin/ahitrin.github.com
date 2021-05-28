@@ -4,6 +4,7 @@ category : work
 comments : true
 title: Автоматический поиск ошибок в Java-коде через генерацию тестов
 tags : [delta debugging, testing, raw idea]
+date: 2015-12-10
 ---
 
 Почитал с утра [пару](http://blog.acolyer.org/2015/11/16/simplifying-and-isolating-failure-inducing-input/) [статей](http://blog.acolyer.org/2015/11/17/hierarchical-delta-debugging/) по delta debugging. Не могу теперь выкинуть из головы идею.

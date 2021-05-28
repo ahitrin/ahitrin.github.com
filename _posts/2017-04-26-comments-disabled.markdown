@@ -3,6 +3,7 @@ layout: post
 category : test
 title: Комментарии Disqus отключены
 tags : [disqus]
+date: 2017-04-26
 ---
 
 Я порядком устал за прошедшие годы от возни с настройкой комментариев через Disqus.

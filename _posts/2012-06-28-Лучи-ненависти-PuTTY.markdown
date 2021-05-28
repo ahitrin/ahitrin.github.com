@@ -3,6 +3,7 @@ layout: post
 category : work
 comments : true
 tags : [git, ssh, putty]
+date: 2012-06-28
 ---
 
 ![pic](/images/PuTTY_NoWay.png)

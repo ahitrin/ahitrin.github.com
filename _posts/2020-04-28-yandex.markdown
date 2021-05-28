@@ -3,6 +3,7 @@ title: Я перешёл в Яндекс
 layout: post
 category : work
 tags : [job]
+date: 2020-04-28
 ---
 
 Собственно, вся новость в заголовке.

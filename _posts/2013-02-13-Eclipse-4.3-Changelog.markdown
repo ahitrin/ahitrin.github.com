@@ -3,6 +3,7 @@ layout: post
 category : work
 comments : true
 tags : [eclipse, humor]
+date: 2013-02-13
 ---
 
 Из твиттера пришла очень весёлая [ссылка](http://leonsbuddydave.tumblr.com/post/42394969682/eclipse-4-3-changelog-added-the-word-eclipse), вот я и решил сделать перевод на скорую руку.

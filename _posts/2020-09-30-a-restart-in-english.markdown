@@ -4,6 +4,7 @@ title: A restart in English
 category: misc
 comments: true
 tags: 
+date: 2020-09-30
 ---
 
 Well, this blog seems to stay abandoned for a while.
