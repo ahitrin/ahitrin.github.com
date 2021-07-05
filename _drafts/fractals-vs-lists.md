@@ -62,8 +62,8 @@ Just keep going until the final goal is achieved.
 Alas, by keeping all substeps in the same task we make them quite opaque.
 _Something_ is happening in the task, and it will be finished _someday_.
 
-Depending on your working environment and team agreements, this situation could not significantly harm your performance.
-But in most cases, it does.
+Depending on your working environment and team agreements, this situation could or could not harm your performance.
+In the most of cases, I'm afraid, it does.
 There are thousands of words written that could explain better than me why large tasks decrease your productivity.
 
 **NOTE**: provide links
@@ -85,17 +85,17 @@ Much more often you'll see it like this:
 ```
 Ticket      Label                       Assignee
 ----        ----                        ----
-#321        An original task            Fellow developer
-#322        Config migrations           Fellow developer
-#323        Code cleanup                Fellow developer
-#324        Add more tests              Fellow developer
+#321        An original task            You
+#322        Config migrations           You
+#323        Code cleanup                You
+#324        Add more tests              You
 ```
 
 When splitting your task into subtasks, you usually have to pay a new tax: the tax of manual dependency management.
-Starting from now, your every task priority _decision_ gains an additional cost (depending on the tracker, of course).
-When you ask a question about relations between tasks, you have to visit one or several of them to find a question:
+Starting from now, your every decision about what subtask to take next gains an additional cost.
+When you ask a question about relations between tasks, you have to visit one or several of them to find an answer:
 
-* **Is there anything that prevents us from starting work on task #1**?
+* **Is there anything that prevents us from starting work on task #N**?
 Well, dig into it and check whether there is any "blocker task" on the card.
 
 * **Which tasks have no blockers**?
@@ -106,75 +106,88 @@ Use priorities you've assigned to them manually.
 Of course, you should better ignore the fact that your "super-duper critical" task could easily be blocked by another task that looks like a "senseless crap" in isolation.
 
 Is it possible to reduce this tax?
-Let me introduce a _possible_ way to do it.
+Let me introduce a possible way to do it.
 
 ## Respect the structure
 
-Because of the task-oriented nature of most task-tracking tools, the relations between these tasks are second-class citizens.
-How can you spot the fractal structure and efficiently work with it when the only thing you get is a big pile of tickets?
-Therefore, we should try to visualize this tree (tree structure is also a fractal) and introduce our dependencies as first-class citizens.
+Because of the task-oriented nature of most task-tracking tools, _the relations between these tasks are second-class citizens_.
+How could you ever spot the fractal structure when the only thing you get is a big unstructured pile of tickets?
+To make this happen, we should try to visualize this tree and introduce our dependencies as first-class citizens.
 
-Let me say right from the start: this post is not about any kind of "Gantt tool".
-Yes, they provide some kind of dependency structure, but they're focused on very different things (duration, "resources", "materials", large scope) and provide a very heavyweight workflow.
-Here, I want to introduce the concept of a lightweight planner that programmers can use in everyday work.
+You might say: "ah, this guy is speaking about Gantt diagram tools!".
+Yes, such tools provide some kind of dependency structure, but in my experience, most of them have serious flaws.
+They're mostly focused on very different things (duration, "resources", "materials", large scope) and provide a very heavyweight workflow.
+They're oriented on managers, not on programmers!
+
+But I <strike>belive</strike> know that we deserve to have good task-management tools that could help us to handle with complex and tangled nature of software development.
+The original idea was introduced in a brilliant ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book by [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund).
+
+![Book cover](/images/fractals-vs-lists/mikado-book.jpg)
 
 How could a task workflow look like in such a tool?
 
-At the beginning of a new day you choose a single "task" from this tracker and start to work on it.
-This task has already been <strike>estimated</strike> "pre-planned" and split into <strike>a simple, straightforward-looking checklist</strike> three subtasks.
+At the beginning of a new day you choose a single goal from this tracker and start to work on it.
+Few days ago you've already thought about this goal and preliminarily splitted it into three subtasks.
 
 ![an original task as tree](/images/fractals-vs-lists/t1.png)
 
-As it already has subtasks so you choose to start from the first one.
-To improve your _focus_, you _hide_ other subtasks - they are not needed at the moment.
+The tool highlights non-blocked tasks for you making them easier to spot.
+So you simply choose to start from the first one.
+To improve your focus, you _hide_ other subtasks - they are not needed at the moment.
 
 ![focus on the first subtask](/images/fractals-vs-lists/t2.png)
 
-At first glance, this step appears to be simple, but when you dig into it, it <strike>suddenly</strike> grows in size.
+At the first glance, this step appears to be simple, but when you dig into it, it grows in size.
 You reflect these changes in your tracker by adding new subtasks.
 In your task tracker, it's a quick and easy operation.
 
 ![new nested subtasks appear](/images/fractals-vs-lists/t3.png)
 
 A number of subtasks still grow, but you're prepared for that.
-No matter how deep you dig, you could always control the complexity of your current working context.
-Split your tasks into parts, focus on a single chosen part and hide others.
-Place blocking relations between subtasks when you see that they need to be executed in order.
-Remove relations when you see that they do not depend on each other.
-Group similar subtasks together.
+No matter how deep you dig in, your tool always allows to control the complexity of your current working context.
+You could split your tasks into parts to focus on a single chosen part.
+You could draw relations between subtasks to provide an order of execution.
+You coould remove these relations when you see that two tasks do not depend on each other.
 All these operations allow you to keep the number of your next actions small.
 
-From time to time you switch from "working mode" into "planning mode".
-Instead of "zooming in" into subtasks, you "zoom out" to see a whole picture.
+From time to time you may switch from "working mode" into "planning mode".
+Instead of "zooming in" into a single subtask, the tool lets you "zoom out" to see a whole picture.
 It may look like this, for example:
 
 ![the whole view](/images/fractals-vs-lists/t4.png)
 
-Does it look scary?
-This is quite possible when you're unfamiliar with such kind of task management.
-At first glance things seem worse: not only have more subtasks to manage now, but also many more explicit dependencies between them.
-The total amount of "items" has been increased compared to previous approaches.
-
-But when you look at how does it behave _in dynamics_, things do change.
-In that mode, you don't work on any single task.
-Instead, you look at relations between them and reorganize them when needed.
-It's very similar to the mind mapping technique, when you organize connections between your ideas.
-You decide what is _relatively more_ important, and what is _relatively less_ important.
-Every line in this graph becomes _the record of your decision_.
-You don't need to keep these decisions in your mind after returning to the "close view" mode.
-
-Back to our example, let's imagine that you decide that one of your refactorings could be performed later since it doesn't actually block your work.
-(This happens to me regularly: when I dig into code, the initial intent might be "let's clean up everything!"; but then I cool down and make a more pragmatic look, finding that some of the refactorings could easily be postponed.)
-To reflect your decision, you move one of your refactoring subtasks into the "Few postponed cleanups" group.
+Now let's imagine that you decide that one of your refactorings could be performed later since it doesn't actually block your work.
+The only thing you need to do is to _insert_ a new subgoal between an original task and this refactoring.
 
 ![subtask moved](/images/fractals-vs-lists/t5.png)
 
-Then you've zoomed into the "Preliminary refactoring" again.
+Then let's zoom into the "Preliminary refactoring" again.
 It's become simpler than before because the "Migrate config files" subtask doesn't block it anymore.
 
 ![zoomed back to refactoring](/images/fractals-vs-lists/t6.png)
 
-Simply take the "top" subtask (having no blockers or nested subtasks) and solve it.
+You may simply take the topmost subtask and solve it.
+After you've ordered your small steps, all of them could be taken one after one.
+
+## Why is it better?
+
+This process may look scary when you're unfamiliar with such kind of task management.
+At first glance things seem worse: not only have more subtasks to manage now, but also many more explicit dependencies between them.
+The total amount of "items" has been increased compared to previous approaches.
+
+But when you look at how does it behave _in dynamics_, things do change.
+With such tool you could easily change the scale of thinking and planning.
+
+In the "global view" mode, you usually don't work on any single task.
+Instead, you look at relations between tasks, reorganize them, spot patterns, and think about big picture.
+It's very similar to the "mind mapping" technique which is used to organize connections between ideas.
+You only need to decide what is _relatively more_ important, and what is _relatively less_ important.
+The tool takes responsibility on the _absolute_ ordering.
+Every line in this graph becomes _the record of your decision_.
+And after returning to the "close view" mode, you don't need to keep these decisions in your mind.
+
+The only thing you need to focus on is how to finish a simple "top" subtask.
+When it's done, some another subtask will become unblocked.
 This allows new tasks to become "top" ones.
 This process strictly follows the order you've defined earlier.
 Now your task tracker works not like mind mapping, but like a TODO-list.
@@ -194,7 +207,6 @@ And it saves the time you might lose when escaping from these traps.
 Here's a less obvious but more important point.
 Without experience in decomposition, you often don't know how to split your tasks properly.
 But to gain experience, you need to do it on a regular basis.
-Even after ~5 years of using my tool, I still find new ideas to improve my techniques.
 Even after ~5 years of using my tool I still find new ideas to improve my techniques.
 
 **Risk of context loss**.
@@ -242,7 +254,6 @@ It's only my fault that it took several month to formulate the answer!
 2. [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund) with their ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book have changed my way of thinking about tasks.
 After several years of practicing I find it way more natural, easy and practical than the classical big-ticket-oriented approach.
 3. [Sergey Tselovalnikov](https://twitter.com/SerCeMan), my Russian ex-colleague, gave me much enough courage to start writing in English.
-He's also my informal HN promoter, but it's a secret!
 Check out his [blog](https://serce.me/archives/).
 
 ## Additional links
