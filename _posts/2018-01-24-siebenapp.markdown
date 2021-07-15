@@ -2,6 +2,7 @@
 layout: post
 title: "SiebenApp: мой персональный проект"
 tags : [SiebenApp, gtd]
+date: 2018-01-24
 ---
 
 Вот уже больше года я потихоньку развиваю [свой pet project][SiebenApp].
@@ -63,7 +64,7 @@ Dog fooding - это реально полезная вещь!
 
 Надеюсь, он окажется полезным не только мне :)
 
-[SiebenApp]: https://github.com/ahitrin/SibenApp
+[SiebenApp]: https://github.com/ahitrin/SiebenApp
 [MikadoMethod]: https://www.manning.com/books/the-mikado-method
 [graphviz]: http://www.graphviz.org
 [blog]: https://ahitrin.github.io/SiebenApp

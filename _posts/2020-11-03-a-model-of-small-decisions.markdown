@@ -3,6 +3,7 @@ layout: post
 category : work
 title: A model of small decisions
 tags : [model of small decisions, productivity]
+date: 2020-11-03
 ---
 
 ![a dence forest](/images/a-model-of-small-decisions/forest.jpg)

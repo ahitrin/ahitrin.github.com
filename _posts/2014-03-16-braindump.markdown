@@ -3,6 +3,7 @@ layout: post
 category : misc
 comments : true
 tags : [gtd, ubuntu, vim]
+date: 2014-03-16
 ---
 
 Давайте уж не стану ничего писать про сам GTD, все эти вещи гуглятся на раз.

@@ -3,6 +3,7 @@ layout: post
 category : work
 comments : true
 tags : [java, ServerAccess, static analysis]
+date: 2015-06-18
 ---
 
 На днях Facebook выпустил [новую утилиту](http://fbinfer.com/) для статического анализа кода на Java/C.

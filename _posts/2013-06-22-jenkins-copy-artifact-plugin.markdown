@@ -3,6 +3,7 @@ layout: post
 category : work
 comments : true
 tags : [jenkins, continuous integration]
+date: 2013-06-22
 ---
 
 Допустим, у вас есть несколько задач в Jenkins, и между ними надо передавать параметры. Например, номер версии.

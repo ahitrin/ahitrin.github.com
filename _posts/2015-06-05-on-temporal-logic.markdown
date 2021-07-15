@@ -4,6 +4,7 @@ category : work
 comments : true
 title: О темпоральной логике
 tags : [continuous integration, continous delivery]
+date: 2015-06-05
 ---
 
 Давеча позволил себе немного пожаловаться в твиттер:

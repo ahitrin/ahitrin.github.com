@@ -3,6 +3,7 @@ layout: post
 category : test
 comments : true
 tags : [jekyll]
+date: 2012-06-10
 ---
 
 # Статическая генерация сайтов

@@ -3,6 +3,7 @@ layout: post
 category : jekyll
 title: Back to Jekyll defaults
 tags : []
+date: 2021-02-06
 ---
 
 Hi there!

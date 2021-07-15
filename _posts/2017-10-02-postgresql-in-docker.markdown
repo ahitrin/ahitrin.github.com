@@ -3,6 +3,7 @@ title: Корректная работа с PostgreSQL в Docker
 layout: post
 category : work
 tags : [docker, vagrant, postgresql, strace]
+date: 2017-10-02
 ---
 
 Интересную проблему удалось решить вчера.

@@ -4,6 +4,7 @@ title: Рабочий дневник программиста
 categories: work
 comments : true
 tags: GTD productivity vim
+date: 2017-03-25
 ---
 
 ![boat_journal](/images/worklogs/640px-Grand_Turk.jpg)
