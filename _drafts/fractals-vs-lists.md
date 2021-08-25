@@ -235,6 +235,16 @@ I've even had to [create one](https://github.com/ahitrin/SiebenApp) by myself.
 It allows for understanding the concepts described here but still lacks a lot of important features.
 But if you only need to evaluate the ideas I've described here, it may help you.
 
+## Related story
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">When I first started contracting in London, I worked as the only developer on a team that had TWO project managers - one in Leeds and one in Swindon. Every week I dropped working software, they tested it, and the plan changed.</p>&mdash; Jason Gorman (only, more indoors than usual) (@jasongorman) <a href="https://twitter.com/jasongorman/status/1427582525724151809?ref_src=twsrc%5Etfw">August 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Every Friday I had to travel up to Leeds and then down to Swindon to help them update their project plan. That was a day out of every week for 3 people to change a Gantt chart that was out of date by the following Tuesday.</p>&mdash; Jason Gorman (only, more indoors than usual) (@jasongorman) <a href="https://twitter.com/jasongorman/status/1427582527569637379?ref_src=twsrc%5Etfw">August 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve believed ever since that detailed long-term planning in s/w is a waste of time. If you iterate working software fast enough, you can deal in reality, not guesswork.</p>&mdash; Jason Gorman (only, more indoors than usual) (@jasongorman) <a href="https://twitter.com/jasongorman/status/1427582529188597763?ref_src=twsrc%5Etfw">August 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">And, yes, that means they spent 20% of their entire development budget (i.e., me) maintaining a Gantt chart.</p>&mdash; Jason Gorman (only, more indoors than usual) (@jasongorman) <a href="https://twitter.com/jasongorman/status/1427582530765705223?ref_src=twsrc%5Etfw">August 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
 ## Final thoughts
 
 At last, we have the answer to the question from the heading.
