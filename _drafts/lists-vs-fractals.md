@@ -66,8 +66,6 @@ Depending on your working environment and team agreements, this situation could 
 In the most of cases, I'm afraid, it does.
 There are thousands of words written that could explain better than me why large tasks decrease your productivity.
 
-**NOTE**: provide links
-
 Of course, this is a common problem, and there is a solution already!
 Let's proceed to it.
 
@@ -169,7 +167,7 @@ It's become simpler than before because the "Migrate config files" subtask doesn
 You may simply take the topmost subtask and solve it.
 After you've ordered your small steps, all of them could be taken one after one.
 
-## Why is it better?
+## Is it better?
 
 This process may look scary when you're unfamiliar with such kind of task management.
 At first glance things seem worse: not only have more subtasks to manage now, but also many more explicit dependencies between them.
@@ -227,15 +225,27 @@ As a consequence of the two previous issues, duplicated subtasks appear on a reg
 On the other hand, this could happen to any task tracker, right? 
 
 All of these issues could be mitigated with a good tool.
-But not the last one!
+Here we go to the last drawback!
 
-**Lack of tools**.
+**Lack of good tools**.
 I've looked at tens of the most popular task management tools, and none of them is close enough to the described functionality.
 I've even had to [create one](https://github.com/ahitrin/SiebenApp) by myself.
 It allows for understanding the concepts described here but still lacks a lot of important features.
 But if you only need to evaluate the ideas I've described here, it may help you.
 
-## Related story
+There's definitely at least one TODO app for MacOSX with similar functionality, but I've lost a link on it.
+Sorry.
+
+## Is it Gantt diagram?
+
+The one who has enough experience in development may feel suspicious after my claim: "we have lack of tools".
+Of course there is a whole class of tools for "[management of tasks and dependencies](https://en.wikipedia.org/wiki/Gantt_chart)" we have to live with for decades.
+
+![gantt chart example](/images/lists-vs-fractals/example_gantt_chart.gif)
+<small>Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/7/73/Pert_example_gantt_chart.gif)</small>
+
+Often, it's too far from a symbiosis.
+The following short story perfectly illustrates the problem:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">When I first started contracting in London, I worked as the only developer on a team that had TWO project managers - one in Leeds and one in Swindon. Every week I dropped working software, they tested it, and the plan changed.</p>&mdash; Jason Gorman (only, more indoors than usual) (@jasongorman) <a href="https://twitter.com/jasongorman/status/1427582525724151809?ref_src=twsrc%5Etfw">August 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
@@ -245,15 +255,7 @@ But if you only need to evaluate the ideas I've described here, it may help you.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">And, yes, that means they spent 20% of their entire development budget (i.e., me) maintaining a Gantt chart.</p>&mdash; Jason Gorman (only, more indoors than usual) (@jasongorman) <a href="https://twitter.com/jasongorman/status/1427582530765705223?ref_src=twsrc%5Etfw">August 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-## Final thoughts
-
-At last, we have the answer to the question from the heading.
-
-**Why do we use linear approximations for fractals?** -- Because we don't have good tools for that.
-
-**Why don't we have such tools?** -- Because the most of us is stuck to 
-
-I sincerely hope that after some time we could have mature and flexible tree-based task trackers.
+I have to draw a line **TODO**
 
 ## Acknowledges
 
@@ -264,13 +266,16 @@ It's only my fault that it took several month to formulate the answer!
 2. [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund) with their ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book have changed my way of thinking about tasks.
 After several years of practicing I find it way more natural, easy and practical than the classical big-ticket-oriented approach.
 3. [Sergey Tselovalnikov](https://twitter.com/SerCeMan), my Russian ex-colleague, gave me much enough courage to start writing in English.
-Check out his [blog](https://serce.me/archives/).
+He has also given many useful comments on the draft version of this essay.
+Please check out his [blog](https://serce.me/archives/).
 
 ## Additional links
 
 In case you want to take a look at the herd of task trackers, take a look
 [here](https://opensource.com/article/21/3/open-source-project-management)
-or [there](https://opensource.com/article/18/2/agile-project-management-tools).
+or [here](https://opensource.com/article/18/2/agile-project-management-tools).
+
+[Mr Michael "GeePaw" Hill](https://twitter.com/GeePawHill) has also posted interesting thoughts on the similar topic [here](https://www.geepawhill.org/2021/09/29/many-more-much-smaller-steps-first-sketch/) and [here](https://www.geepawhill.org/2021/10/26/mmmss-a-closer-look-at-steps/).
 
 ## Comments
 
