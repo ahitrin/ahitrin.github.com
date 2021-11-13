@@ -1,5 +1,5 @@
 digraph g {
-node [shape=box, color=red];
+node [shape=box, color=green];
 edge [color=black];
 subgraph cluster_0 {
     color=orange;
@@ -10,9 +10,9 @@ subgraph cluster_0 {
 (&quot;make a change easy&quot;)";
 
         5 [label="1.2: Extract some code
-into new module"];
+into new module", color=red];
         6 [label="1.1: Migrate config files
-to the new format"];
+to the new format", color=red];
     }
 3 [label="2: Implement the feature itself
 (&quot;make an easy change&quot;)"];

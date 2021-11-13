@@ -1,40 +1,27 @@
 digraph g {
-node [shape=box, color=red];
+node [shape=box, color=green];
 edge [color=black];
 subgraph cluster_0 {
     color=orange;
     label = "An original task (we are in the fractal trap!)";
-    subgraph cluster_1 {
-        color = green;
-        label="1: Preliminary refactoring
-(&quot;make a change easy&quot;)";
 
-        subgraph cluster_2 {
-            label = "";
-            color = lightblue;
-            6 [label="1.1: Migrate config files
+6 [label="1.1: Migrate config files
 to the new format"];
-            7 [label="1.1.1: Find and wrap all
+7 [label="1.1.1: Find and wrap all
 places where old config
 format is used"];
-            7 -> 6;
-        }
+7 -> 6;
 
-        subgraph cluster_3 {
-            color = grey;
-            label = "";
-            5 [label="1.2: Extract some code
+5 [label="1.2: Extract some code
 into new module"];
-            8 [label="1.2.1: Break unexpected
+8 [label="1.2.1: Break unexpected
 circular references in code"];
-            8 -> 5;
-        }
-    }
+8 -> 5;
 3 [label="2: Implement the feature itself
 (&quot;make an easy change&quot;)"];
 4 [label="3: Few postponed cleanups"];
 9 [label="0. Add few tests on
-legacy code"];
+legacy code", color=red];
 3 -> 4;
 5 -> 3;
 6 -> 3;
