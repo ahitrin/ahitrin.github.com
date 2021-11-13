@@ -256,6 +256,7 @@ Gantt tools oriented on managers, not on programmers.
 They're mostly focused on very different things (duration, "resources", "materials", large scope) and provide relatively heavyweight workflow.
 
 Things should change when a planning tool lies in perfomer's hands.
+**TODO**
 
 Yet you should take it with a grain of salt.
 
