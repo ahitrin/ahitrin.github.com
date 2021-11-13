@@ -111,18 +111,12 @@ Let me introduce a possible way to do it.
 Because of the task-oriented nature of most task-tracking tools, _the relations between these tasks are second-class citizens_.
 How could you ever spot the fractal structure when the only thing you get is a big unstructured pile of tickets?
 To make this happen, we should try to visualize this tree and introduce our dependencies as first-class citizens.
-
-You might say: "ah, this guy is speaking about Gantt diagram tools!".
-Yes, such tools provide some kind of dependency structure, but in my experience, most of them have serious flaws.
-They're mostly focused on very different things (duration, "resources", "materials", large scope) and provide a very heavyweight workflow.
-They're oriented on managers, not on programmers!
-
-But I <strike>belive</strike> know that we deserve to have good task-management tools that could help us to handle with complex and tangled nature of software development.
-The original idea was introduced in a brilliant ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book by [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund).
-
-![Book cover](/images/lists-vs-fractals/mikado-book.jpg)
+But I believe that we deserve to have good task-management tools that could help us to handle with complex and tangled nature of software development.
 
 How could a task workflow look like in such a tool?
+This vision is primarily inspired by ideas taken from a brilliant ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book by [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund).
+
+![Book cover](/images/lists-vs-fractals/mikado-book.jpg)
 
 At the beginning of a new day you choose a single goal from this tracker and start to work on it.
 Few days ago you've already thought about this goal and preliminarily splitted it into three subtasks.
@@ -255,14 +249,22 @@ The following short story perfectly illustrates the problem:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">And, yes, that means they spent 20% of their entire development budget (i.e., me) maintaining a Gantt chart.</p>&mdash; Jason Gorman (only, more indoors than usual) (@jasongorman) <a href="https://twitter.com/jasongorman/status/1427582530765705223?ref_src=twsrc%5Etfw">August 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-I have to draw a line **TODO**
+I have to draw a line between two aproaches.
+Why do I distinguish a "fractal-oriented" approach from the well known Gantt-chart approach?
+I'd like to point on the following difference.
+Gantt tools oriented on managers, not on programmers.
+They're mostly focused on very different things (duration, "resources", "materials", large scope) and provide relatively heavyweight workflow.
+
+Things should change when a planning tool lies in perfomer's hands.
+
+Yet you should take it with a grain of salt.
 
 ## Acknowledges
 
 This article wouldn't appear without influence of following people:
 
 1. [Jessica Kerr](https://twitter.com/jessitron) in her ["Code is a coastline"](https://jessitron.com/2020/09/19/code-is-a-coastline/) have inspired me to write my own thoughts about fractal nature of software tasks.
-It's only my fault that it took several month to formulate the answer!
+It's only my fault that it took several month to formulate an answer!
 2. [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund) with their ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book have changed my way of thinking about tasks.
 After several years of practicing I find it way more natural, easy and practical than the classical big-ticket-oriented approach.
 3. [Sergey Tselovalnikov](https://twitter.com/SerCeMan), my Russian ex-colleague, gave me much enough courage to start writing in English.
