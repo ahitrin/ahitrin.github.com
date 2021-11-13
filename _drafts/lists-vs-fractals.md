@@ -1,8 +1,8 @@
 ---
 layout: post
 category : work
-title: Why do we use linear approximations for fractals?
-tags : [fractal trap, SiebenApp]
+title: Lists vs. Fractals
+tags : [fractal trap, SiebenApp, model of small decisions]
 ---
 
 **TODO**: Add intro
@@ -18,28 +18,28 @@ Say you have a "software project":
 At the beginning of a new week you choose a single "task" from this tracker and start to work on it.
 This task has already been "estimated" and split into a simple, straightforward-looking checklist.
 
-![An original task](/images/fractals-vs-lists/1.png)
+![An original task](/images/lists-vs-fractals/1.png)
 
 Then you simply start to move through this list.
 At the first glance, these steps appear to be simple, but when you dig into the first one, it suddenly grows in size.
 
-![An original task becomes a little bigger](/images/fractals-vs-lists/2.png)
+![An original task becomes a little bigger](/images/lists-vs-fractals/2.png)
 
 There might be a _blocker_ or significant subtask for almost every simple step in your software project.
 Your "first subtask" grows more and more, becoming comparable in size to the whole original task.
 
-![An original task has grown 2x in size](/images/fractals-vs-lists/3.png)
+![An original task has grown 2x in size](/images/lists-vs-fractals/3.png)
 
 Finally, you've found that code needed to be changed is not covered with tests.
 Much bad, need to fix it!
 
-![We're in the fractal trap!](/images/fractals-vs-lists/4.png)
+![We're in the fractal trap!](/images/lists-vs-fractals/4.png)
 
 Of course, this isn't a rant against refactoring or tests!
 They are truly needed, especially in complex and aged code bases.
 I rant against the way we've used to deal with tasks.
 
-![Sierpinski triangle](/images/fractals-vs-lists/Sierpinski_triangle.svg)
+![Sierpinski triangle](/images/lists-vs-fractals/Sierpinski_triangle.svg)
 
 <small>Sierpiński triangle, image from [Wikipedia](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle)</small>
 
@@ -77,7 +77,7 @@ Once you get tired of big tasks, you start splitting them into smaller pieces.
 In your new working process, each subtask is only allowed to become a full-fledged task in your tracker once you notice that it's big enough.
 Like this:
 
-![4 tasks instead of 1](/images/fractals-vs-lists/5.png)
+![4 tasks instead of 1](/images/lists-vs-fractals/5.png)
 
 Oh, wait!..
 Much more often you'll see it like this:
@@ -122,26 +122,26 @@ They're oriented on managers, not on programmers!
 But I <strike>belive</strike> know that we deserve to have good task-management tools that could help us to handle with complex and tangled nature of software development.
 The original idea was introduced in a brilliant ["The Mikado Method"](https://www.manning.com/books/the-mikado-method) book by [Ola Ellnestam](https://twitter.com/ellnestam) and [Daniel Brolund](https://twitter.com/danielbrolund).
 
-![Book cover](/images/fractals-vs-lists/mikado-book.jpg)
+![Book cover](/images/lists-vs-fractals/mikado-book.jpg)
 
 How could a task workflow look like in such a tool?
 
 At the beginning of a new day you choose a single goal from this tracker and start to work on it.
 Few days ago you've already thought about this goal and preliminarily splitted it into three subtasks.
 
-![an original task as tree](/images/fractals-vs-lists/t1.png)
+![an original task as tree](/images/lists-vs-fractals/t1.png)
 
 The tool highlights non-blocked tasks for you making them easier to spot.
 So you simply choose to start from the first one.
 To improve your focus, you _hide_ other subtasks - they are not needed at the moment.
 
-![focus on the first subtask](/images/fractals-vs-lists/t2.png)
+![focus on the first subtask](/images/lists-vs-fractals/t2.png)
 
 At the first glance, this step appears to be simple, but when you dig into it, it grows in size.
 You reflect these changes in your tracker by adding new subtasks.
 In your task tracker, it's a quick and easy operation.
 
-![new nested subtasks appear](/images/fractals-vs-lists/t3.png)
+![new nested subtasks appear](/images/lists-vs-fractals/t3.png)
 
 A number of subtasks still grow, but you're prepared for that.
 No matter how deep you dig in, your tool always allows to control the complexity of your current working context.
@@ -154,17 +154,17 @@ From time to time you may switch from "working mode" into "planning mode".
 Instead of "zooming in" into a single subtask, the tool lets you "zoom out" to see a whole picture.
 It may look like this, for example:
 
-![the whole view](/images/fractals-vs-lists/t4.png)
+![the whole view](/images/lists-vs-fractals/t4.png)
 
 Now let's imagine that you decide that one of your refactorings could be performed later since it doesn't actually block your work.
 The only thing you need to do is to _insert_ a new subgoal between an original task and this refactoring.
 
-![subtask moved](/images/fractals-vs-lists/t5.png)
+![subtask moved](/images/lists-vs-fractals/t5.png)
 
 Then let's zoom into the "Preliminary refactoring" again.
 It's become simpler than before because the "Migrate config files" subtask doesn't block it anymore.
 
-![zoomed back to refactoring](/images/fractals-vs-lists/t6.png)
+![zoomed back to refactoring](/images/lists-vs-fractals/t6.png)
 
 You may simply take the topmost subtask and solve it.
 After you've ordered your small steps, all of them could be taken one after one.
