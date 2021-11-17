@@ -5,7 +5,10 @@ title: Lists vs. Fractals
 tags : [fractal trap, SiebenApp, model of small decisions]
 ---
 
-**TODO**: Add intro
+**TLDR**: I have a hypothesis that problems in programming often have fractal-like nature.
+This causes delays in work and makes management of tasks more complicated.
+Our task-management tools cannot properly handle fractal tasks because they are based on the linear concept and treat task dependencies as the second-class citisen.
+If we take into account the fractal nature of tasks, such management may become easier.
 
 ## Welcome to the _fractal trap_!
 
@@ -255,10 +258,17 @@ I'd like to point on the following difference.
 Gantt tools oriented on managers, not on programmers.
 They're mostly focused on very different things (duration, "resources", "materials", large scope) and provide relatively heavyweight workflow.
 
-Things should change when a planning tool lies in perfomer's hands.
-**TODO**
+Things should change when a planning tool lies in the hands of _perfomer_.
+When it has no distracting or heavyweight concepts.
+When it could simply be used in the parallel with the work itself without breaking the flow.
+Then complex things would become much possible to be solved.
 
-Yet you should take it with a grain of salt.
+Yet I still have more questions than answers.
+How many programmers actually face such kind of issues (and how often)?
+Don't I overcomplicate it?
+Isn't my remedy worse than the original disease?
+
+Let's leave them open for now.
 
 ## Acknowledges
 
