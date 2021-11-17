@@ -10,6 +10,9 @@ This causes delays in work and makes management of tasks more complicated.
 Our task-management tools cannot properly handle fractal tasks because they are based on the linear concept and treat task dependencies as the second-class citisen.
 If we take into account the fractal nature of tasks, such management may become easier.
 
+I also propose an [example of tool](https://github.com/ahitrin/SiebenApp) for such kind of task management.
+You may take a look at it, but it's not obligatory.
+
 ## Welcome to the _fractal trap_!
 
 Let's explore an imaginary (but quite typical) situation.
@@ -203,6 +206,7 @@ Here's a less obvious but more important point.
 Without experience in decomposition, you often don't know how to split your tasks properly.
 But to gain experience, you need to do it on a regular basis.
 Even after ~5 years of using my tool I still find new ideas to improve my techniques.
+As an example, I still don't know how to work with structureless tasks like writing big pieces of text (especially this one).
 
 **Risk of context loss**.
 Alas, this happens regularly.
@@ -230,8 +234,11 @@ I've even had to [create one](https://github.com/ahitrin/SiebenApp) by myself.
 It allows for understanding the concepts described here but still lacks a lot of important features.
 But if you only need to evaluate the ideas I've described here, it may help you.
 
+![the same diagram as above](/images/lists-vs-fractals/sieben.png)
+<small>The same diagram as above, implemented in SiebenApp</small>
+
 There's definitely at least one TODO app for MacOSX with similar functionality, but I've lost a link on it.
-Sorry.
+I'm sorry.
 
 ## Is it Gantt diagram?
 
