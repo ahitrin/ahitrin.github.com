@@ -26,7 +26,7 @@ This task has already been "estimated" and split into a simple, straightforward-
 
 ![An original task](/images/lists-vs-fractals/1.png)
 
-Then you simply start to move through this list.
+Then you simply start moving through this list.
 At the first glance, these steps appear to be simple, but when you dig into the first one, it suddenly grows in size.
 
 ![An original task becomes a little bigger](/images/lists-vs-fractals/2.png)
@@ -259,27 +259,27 @@ The following short story perfectly illustrates the problem:
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">And, yes, that means they spent 20% of their entire development budget (i.e., me) maintaining a Gantt chart.</p>&mdash; Jason Gorman (only, more indoors than usual) (@jasongorman) <a href="https://twitter.com/jasongorman/status/1427582530765705223?ref_src=twsrc%5Etfw">August 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-I have to draw a line between two aproaches.
+I have to draw a line between the two approaches.
 Why do I distinguish a "fractal-oriented" approach from the well known Gantt-chart approach?
 I'd like to point on the following difference.
-Gantt tools oriented on managers, not on programmers.
-They're mostly focused on very different things (duration, "resources", "materials", large scope) and provide relatively heavyweight workflow.
+Gantt tools are oriented towards managers, not programmers.
+They're mostly focused on very different things (duration, "resources", "materials", large scope) and provide a relatively heavyweight workflow.
 
 Things should change when a planning tool lies in the hands of _perfomer_.
-When it has no distracting or heavyweight concepts.
-When it could simply be used in the parallel with the work itself without breaking the flow.
-Then complex things would become much possible to be solved.
+When it doesn't have any distracting or heavyweight concepts.
+When it could simply be used in parallel with the work itself without interrupting the flow.
+Then complex problems would become much easier to solve.
 
-Yet I still have more questions than answers.
-How many programmers actually face such kind of issues (and how often)?
-Don't I overcomplicate it?
-Isn't my remedy worse than the original disease?
+Yet at this point, I still have more questions than answers.
+How many programmers actually face such kinds of issues (and how often)?
+Did I overcomplicate it?
+Wouldn't my remedy be worse than the original disease?
 
 Let's leave them open for now.
 
 ## Acknowledges
 
-This article wouldn't appear without influence of following people:
+This article wouldn't exist without influence of following people:
 
 1. [Jessica Kerr](https://twitter.com/jessitron) in her ["Code is a coastline"](https://jessitron.com/2020/09/19/code-is-a-coastline/) have inspired me to write my own thoughts about fractal nature of software tasks.
 It's only my fault that it took several month to formulate an answer!
@@ -302,7 +302,7 @@ or [here](https://opensource.com/article/18/2/agile-project-management-tools).
 Sorry, comments are currently disabled here.
 Once I've tried to use Disqus, but it was _a kind of mess_ that I don't want to be repeated.
 
-But any kind of feedback is kindly appreciated!
+But any kind of feedback is highly appreciated!
 Please leave your comments under the following tweet:
 
 **TODO**
