@@ -306,4 +306,4 @@ Once I've tried to use Disqus, but it was _a kind of mess_ that I don't want to 
 But any kind of feedback is highly appreciated!
 Please leave your comments under the following tweet:
 
-**TODO**
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">New blog: Lists vs Fractals <a href="https://t.co/xt2IsC8YLE">https://t.co/xt2IsC8YLE</a><br>List-based task-management tools and thinking vs the Fractal nature of programming tasks</p>&mdash; Andrey Hitrin (@ahitrin) <a href="https://twitter.com/ahitrin/status/1463527087898255365?ref_src=twsrc%5Etfw">November 24, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
