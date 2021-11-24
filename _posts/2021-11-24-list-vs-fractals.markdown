@@ -2,6 +2,7 @@
 layout: post
 category : work
 title: Lists vs. Fractals
+date: 2021-11-24 19:38:00 +0500
 tags : [fractal trap, SiebenApp, model of small decisions]
 ---
 
