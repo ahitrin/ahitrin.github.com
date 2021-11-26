@@ -46,7 +46,7 @@ Of course, this isn't a rant against refactoring or tests!
 They are truly needed, especially in complex and aged code bases.
 I rant against the way we've used to deal with tasks.
 
-![Sierpinski triangle](/images/lists-vs-fractals/Sierpinski_triangle.svg)
+![Sierpinski triangle](/images/lists-vs-fractals/triangle.png)
 
 <small>Sierpiński triangle, image from [Wikipedia](https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle)</small>
 
