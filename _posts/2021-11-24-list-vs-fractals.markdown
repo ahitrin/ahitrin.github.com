@@ -238,8 +238,11 @@ But if you only need to evaluate the ideas I've described here, it may help you.
 ![the same diagram as above](/images/lists-vs-fractals/sieben.png)
 <small>The same diagram as above, implemented in SiebenApp</small>
 
-There's definitely at least one TODO app for MacOSX with similar functionality, but I've lost a link on it.
-I'm sorry.
+<s>There's definitely at least one TODO app for MacOSX with similar functionality, but I've lost a link on it.
+I'm sorry.</s>
+
+**UPD (2022-03-18)**: [Here](https://drozdyuk.medium.com/how-to-refactor-large-huge-complex-codebases-f5fa8e1d7ee8) I've found a reference to a similar MacOSX tool [TaskHeat](https://www.eyen.fr/).
+But I'm a Linux-boy without MacOS, so I couldn't check it by myself.
 
 ## Is it Gantt diagram?
 
