@@ -243,6 +243,7 @@ I'm sorry.</s>
 
 **UPD (2022-03-18)**: [Here](https://drozdyuk.medium.com/how-to-refactor-large-huge-complex-codebases-f5fa8e1d7ee8) I've found a reference to a similar MacOSX tool [TaskHeat](https://www.eyen.fr/).
 But I'm a Linux-boy without MacOS, so I couldn't check it by myself.
+This is an excercise left to a reader.
 
 ## Is it Gantt diagram?
 
