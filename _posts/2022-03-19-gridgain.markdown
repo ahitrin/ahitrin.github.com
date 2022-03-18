@@ -1,0 +1,20 @@
+---
+layout: post
+category : work
+tags : [job]
+date: 2022-03-19 12:02:10 +0500
+title: Now working at GridGain
+---
+
+About 2 month ago I've left Yandex for working at GridGain Rus.
+
+Spending almost 2 years in Yandex was an interesting experience, but I cannot name it fruitful or delighting.
+Somewhere in the middle of this journey I've fallen into a "big tech cultural trap" that was [perfectly preparated by Dan Luu](https://danluu.com/culture/).
+Instead of fighting it or adapting myself, I've decided to leave.
+
+Now, I'm a SDET at GridGain.
+I feel the best opportunities to apply my skills, my knowledge, and my passion here.
+
+Please stay tuned: this blog is not abandoned, and I plan to post more thoughts from time to time.
+
+Peace to y'all!✌️
